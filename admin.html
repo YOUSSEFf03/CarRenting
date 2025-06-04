@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro - Admin</title>
+
+
+    <!-- boostrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="admin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-management">
+        <div class="sidebar">
+            <div class="logo-links-div">
+                <!-- <svg width="151" height="43" viewBox="0 0 201 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.1124 9.05263C10.1124 4.053 14.1368 0 19.1011 0H41.573C51.5017 0 59.5506 8.106 59.5506 18.1053H91.0112C95.9756 18.1053 100 22.1583 100 27.1579C100 32.1575 95.9756 36.2105 91.0112 36.2105H68.5393C58.6106 36.2105 50.5618 28.1045 50.5618 18.1053H19.1011C14.1368 18.1053 10.1124 14.0523 10.1124 9.05263Z"
+                        fill="white" />
+                    <path
+                        d="M20.2247 32.8158C20.2247 38.4404 15.6973 43 10.1124 43C4.52745 43 0 38.4404 0 32.8158C0 27.1912 4.52745 22.6316 10.1124 22.6316C15.6973 22.6316 20.2247 27.1912 20.2247 32.8158Z"
+                        fill="white" />
+                    <path
+                        d="M108.945 21.365C108.945 19.8483 109.225 18.3667 109.785 16.92C110.345 15.45 111.162 14.12 112.235 12.93C113.308 11.74 114.615 10.795 116.155 10.095C117.695 9.37167 119.445 9.01 121.405 9.01C123.738 9.01 125.757 9.51167 127.46 10.515C129.187 11.5183 130.47 12.825 131.31 14.435L126.9 17.515C126.527 16.6283 126.025 15.94 125.395 15.45C124.788 14.96 124.112 14.6217 123.365 14.435C122.642 14.225 121.942 14.12 121.265 14.12C120.168 14.12 119.212 14.3417 118.395 14.785C117.578 15.205 116.902 15.7767 116.365 16.5C115.828 17.2233 115.432 18.0283 115.175 18.915C114.918 19.8017 114.79 20.6883 114.79 21.575C114.79 22.555 114.942 23.5 115.245 24.41C115.548 25.32 115.98 26.125 116.54 26.825C117.123 27.525 117.823 28.085 118.64 28.505C119.457 28.9017 120.355 29.1 121.335 29.1C122.035 29.1 122.747 28.9833 123.47 28.75C124.193 28.5167 124.858 28.155 125.465 27.665C126.095 27.1517 126.573 26.4867 126.9 25.67L131.59 28.435C131.1 29.6483 130.295 30.6867 129.175 31.55C128.055 32.4133 126.783 33.0783 125.36 33.545C123.96 33.9883 122.572 34.21 121.195 34.21C119.398 34.21 117.742 33.8483 116.225 33.125C114.732 32.3783 113.437 31.3983 112.34 30.185C111.267 28.9483 110.427 27.5717 109.82 26.055C109.237 24.515 108.945 22.9517 108.945 21.365Z"
+                        fill="white" />
+                    <path
+                        d="M132.867 28.505C132.867 27.2917 133.205 26.23 133.882 25.32C134.558 24.41 135.492 23.6983 136.682 23.185C137.872 22.6483 139.237 22.38 140.777 22.38C141.523 22.38 142.258 22.45 142.982 22.59C143.705 22.7067 144.335 22.8817 144.872 23.115V22.31C144.872 21.3067 144.568 20.5367 143.962 20C143.355 19.4633 142.433 19.195 141.197 19.195C140.17 19.195 139.202 19.37 138.292 19.72C137.405 20.07 136.46 20.5717 135.457 21.225L133.777 17.655C134.99 16.8617 136.25 16.2667 137.557 15.87C138.887 15.4733 140.287 15.275 141.757 15.275C144.51 15.275 146.645 15.94 148.162 17.27C149.702 18.5767 150.472 20.4783 150.472 22.975V27.77C150.472 28.33 150.553 28.7267 150.717 28.96C150.903 29.17 151.218 29.2983 151.662 29.345V34C151.195 34.0933 150.752 34.1633 150.332 34.21C149.935 34.2567 149.585 34.28 149.282 34.28C148.232 34.28 147.427 34.07 146.867 33.65C146.33 33.23 145.992 32.6583 145.852 31.935L145.747 31.13C144.93 32.18 143.95 32.985 142.807 33.545C141.687 34.0817 140.508 34.35 139.272 34.35C138.058 34.35 136.962 34.0933 135.982 33.58C135.025 33.0667 134.267 32.3667 133.707 31.48C133.147 30.5933 132.867 29.6017 132.867 28.505ZM143.997 29.205C144.253 28.995 144.463 28.7617 144.627 28.505C144.79 28.2483 144.872 28.0033 144.872 27.77V26.125C144.405 25.9383 143.88 25.7983 143.297 25.705C142.737 25.5883 142.212 25.53 141.722 25.53C140.695 25.53 139.843 25.7633 139.167 26.23C138.49 26.6733 138.152 27.2683 138.152 28.015C138.152 28.435 138.268 28.82 138.502 29.17C138.735 29.52 139.05 29.8 139.447 30.01C139.867 30.22 140.357 30.325 140.917 30.325C141.477 30.325 142.037 30.22 142.597 30.01C143.157 29.8 143.623 29.5317 143.997 29.205Z"
+                        fill="white" />
+                    <path
+                        d="M166.184 20.42C164.831 20.42 163.606 20.6417 162.509 21.085C161.413 21.505 160.619 22.135 160.129 22.975V34H154.529V15.625H159.674V19.335C160.304 18.0983 161.121 17.13 162.124 16.43C163.128 15.73 164.178 15.3683 165.274 15.345C165.531 15.345 165.718 15.345 165.834 15.345C165.974 15.345 166.091 15.3567 166.184 15.38V20.42Z"
+                        fill="white" />
+                    <path
+                        d="M180.198 20.42C178.845 20.42 177.62 20.6417 176.523 21.085C175.426 21.505 174.633 22.135 174.143 22.975V34H168.543V15.625H173.688V19.335C174.318 18.0983 175.135 17.13 176.138 16.43C177.142 15.73 178.191 15.3683 179.288 15.345C179.545 15.345 179.731 15.345 179.848 15.345C179.988 15.345 180.105 15.3567 180.198 15.38V20.42Z"
+                        fill="white" />
+                    <path
+                        d="M191.17 34.35C189.607 34.35 188.207 34.0933 186.97 33.58C185.757 33.0667 184.73 32.3667 183.89 31.48C183.05 30.5933 182.408 29.5783 181.965 28.435C181.545 27.2917 181.335 26.09 181.335 24.83C181.335 23.5467 181.545 22.3333 181.965 21.19C182.408 20.0467 183.05 19.0317 183.89 18.145C184.73 17.2583 185.757 16.5583 186.97 16.045C188.207 15.5317 189.607 15.275 191.17 15.275C192.733 15.275 194.122 15.5317 195.335 16.045C196.548 16.5583 197.575 17.2583 198.415 18.145C199.255 19.0317 199.897 20.0467 200.34 21.19C200.783 22.3333 201.005 23.5467 201.005 24.83C201.005 26.09 200.783 27.2917 200.34 28.435C199.897 29.5783 199.255 30.5933 198.415 31.48C197.575 32.3667 196.548 33.0667 195.335 33.58C194.122 34.0933 192.733 34.35 191.17 34.35ZM187.075 24.83C187.075 25.7867 187.25 26.6267 187.6 27.35C187.973 28.0733 188.463 28.6333 189.07 29.03C189.677 29.4267 190.377 29.625 191.17 29.625C191.94 29.625 192.628 29.4267 193.235 29.03C193.865 28.61 194.355 28.0383 194.705 27.315C195.055 26.5917 195.23 25.7633 195.23 24.83C195.23 23.8733 195.055 23.0333 194.705 22.31C194.355 21.5867 193.865 21.0267 193.235 20.63C192.628 20.2333 191.94 20.035 191.17 20.035C190.377 20.035 189.677 20.2333 189.07 20.63C188.463 21.0267 187.973 21.5867 187.6 22.31C187.25 23.0333 187.075 23.8733 187.075 24.83Z"
+                        fill="white" />
+                </svg> -->
+                <svg width="131" height="33" viewBox="0 0 201 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.1124 9.05263C10.1124 4.053 14.1368 0 19.1011 0H41.573C51.5017 0 59.5506 8.106 59.5506 18.1053H91.0112C95.9756 18.1053 100 22.1583 100 27.1579C100 32.1575 95.9756 36.2105 91.0112 36.2105H68.5393C58.6106 36.2105 50.5618 28.1045 50.5618 18.1053H19.1011C14.1368 18.1053 10.1124 14.0523 10.1124 9.05263Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M20.2247 32.8158C20.2247 38.4404 15.6973 43 10.1124 43C4.52745 43 0 38.4404 0 32.8158C0 27.1912 4.52745 22.6316 10.1124 22.6316C15.6973 22.6316 20.2247 27.1912 20.2247 32.8158Z"
+                        fill="#00A59B" />
+                    <path
+                        d="M108.945 21.365C108.945 19.8483 109.225 18.3667 109.785 16.92C110.345 15.45 111.162 14.12 112.235 12.93C113.308 11.74 114.615 10.795 116.155 10.095C117.695 9.37167 119.445 9.01 121.405 9.01C123.738 9.01 125.757 9.51167 127.46 10.515C129.187 11.5183 130.47 12.825 131.31 14.435L126.9 17.515C126.527 16.6283 126.025 15.94 125.395 15.45C124.788 14.96 124.112 14.6217 123.365 14.435C122.642 14.225 121.942 14.12 121.265 14.12C120.168 14.12 119.212 14.3417 118.395 14.785C117.578 15.205 116.902 15.7767 116.365 16.5C115.828 17.2233 115.432 18.0283 115.175 18.915C114.918 19.8017 114.79 20.6883 114.79 21.575C114.79 22.555 114.942 23.5 115.245 24.41C115.548 25.32 115.98 26.125 116.54 26.825C117.123 27.525 117.823 28.085 118.64 28.505C119.457 28.9017 120.355 29.1 121.335 29.1C122.035 29.1 122.747 28.9833 123.47 28.75C124.193 28.5167 124.858 28.155 125.465 27.665C126.095 27.1517 126.573 26.4867 126.9 25.67L131.59 28.435C131.1 29.6483 130.295 30.6867 129.175 31.55C128.055 32.4133 126.783 33.0783 125.36 33.545C123.96 33.9883 122.572 34.21 121.195 34.21C119.398 34.21 117.742 33.8483 116.225 33.125C114.732 32.3783 113.437 31.3983 112.34 30.185C111.267 28.9483 110.427 27.5717 109.82 26.055C109.237 24.515 108.945 22.9517 108.945 21.365Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M132.867 28.505C132.867 27.2917 133.205 26.23 133.882 25.32C134.558 24.41 135.492 23.6983 136.682 23.185C137.872 22.6483 139.237 22.38 140.777 22.38C141.523 22.38 142.258 22.45 142.982 22.59C143.705 22.7067 144.335 22.8817 144.872 23.115V22.31C144.872 21.3067 144.568 20.5367 143.962 20C143.355 19.4633 142.433 19.195 141.197 19.195C140.17 19.195 139.202 19.37 138.292 19.72C137.405 20.07 136.46 20.5717 135.457 21.225L133.777 17.655C134.99 16.8617 136.25 16.2667 137.557 15.87C138.887 15.4733 140.287 15.275 141.757 15.275C144.51 15.275 146.645 15.94 148.162 17.27C149.702 18.5767 150.472 20.4783 150.472 22.975V27.77C150.472 28.33 150.553 28.7267 150.717 28.96C150.903 29.17 151.218 29.2983 151.662 29.345V34C151.195 34.0933 150.752 34.1633 150.332 34.21C149.935 34.2567 149.585 34.28 149.282 34.28C148.232 34.28 147.427 34.07 146.867 33.65C146.33 33.23 145.992 32.6583 145.852 31.935L145.747 31.13C144.93 32.18 143.95 32.985 142.807 33.545C141.687 34.0817 140.508 34.35 139.272 34.35C138.058 34.35 136.962 34.0933 135.982 33.58C135.025 33.0667 134.267 32.3667 133.707 31.48C133.147 30.5933 132.867 29.6017 132.867 28.505ZM143.997 29.205C144.253 28.995 144.463 28.7617 144.627 28.505C144.79 28.2483 144.872 28.0033 144.872 27.77V26.125C144.405 25.9383 143.88 25.7983 143.297 25.705C142.737 25.5883 142.212 25.53 141.722 25.53C140.695 25.53 139.843 25.7633 139.167 26.23C138.49 26.6733 138.152 27.2683 138.152 28.015C138.152 28.435 138.268 28.82 138.502 29.17C138.735 29.52 139.05 29.8 139.447 30.01C139.867 30.22 140.357 30.325 140.917 30.325C141.477 30.325 142.037 30.22 142.597 30.01C143.157 29.8 143.623 29.5317 143.997 29.205Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M166.184 20.42C164.831 20.42 163.606 20.6417 162.509 21.085C161.413 21.505 160.619 22.135 160.129 22.975V34H154.529V15.625H159.674V19.335C160.304 18.0983 161.121 17.13 162.124 16.43C163.128 15.73 164.178 15.3683 165.274 15.345C165.531 15.345 165.718 15.345 165.834 15.345C165.974 15.345 166.091 15.3567 166.184 15.38V20.42Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M180.198 20.42C178.845 20.42 177.62 20.6417 176.523 21.085C175.426 21.505 174.633 22.135 174.143 22.975V34H168.543V15.625H173.688V19.335C174.318 18.0983 175.135 17.13 176.138 16.43C177.142 15.73 178.191 15.3683 179.288 15.345C179.545 15.345 179.731 15.345 179.848 15.345C179.988 15.345 180.105 15.3567 180.198 15.38V20.42Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M191.17 34.35C189.607 34.35 188.207 34.0933 186.97 33.58C185.757 33.0667 184.73 32.3667 183.89 31.48C183.05 30.5933 182.408 29.5783 181.965 28.435C181.545 27.2917 181.335 26.09 181.335 24.83C181.335 23.5467 181.545 22.3333 181.965 21.19C182.408 20.0467 183.05 19.0317 183.89 18.145C184.73 17.2583 185.757 16.5583 186.97 16.045C188.207 15.5317 189.607 15.275 191.17 15.275C192.733 15.275 194.122 15.5317 195.335 16.045C196.548 16.5583 197.575 17.2583 198.415 18.145C199.255 19.0317 199.897 20.0467 200.34 21.19C200.783 22.3333 201.005 23.5467 201.005 24.83C201.005 26.09 200.783 27.2917 200.34 28.435C199.897 29.5783 199.255 30.5933 198.415 31.48C197.575 32.3667 196.548 33.0667 195.335 33.58C194.122 34.0933 192.733 34.35 191.17 34.35ZM187.075 24.83C187.075 25.7867 187.25 26.6267 187.6 27.35C187.973 28.0733 188.463 28.6333 189.07 29.03C189.677 29.4267 190.377 29.625 191.17 29.625C191.94 29.625 192.628 29.4267 193.235 29.03C193.865 28.61 194.355 28.0383 194.705 27.315C195.055 26.5917 195.23 25.7633 195.23 24.83C195.23 23.8733 195.055 23.0333 194.705 22.31C194.355 21.5867 193.865 21.0267 193.235 20.63C192.628 20.2333 191.94 20.035 191.17 20.035C190.377 20.035 189.677 20.2333 189.07 20.63C188.463 21.0267 187.973 21.5867 187.6 22.31C187.25 23.0333 187.075 23.8733 187.075 24.83Z"
+                        fill="#167FB3" />
+                </svg>
+                <div class="links-div">
+                    <a href="#">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9.143 4H4.857A.857.857 0 0 0 4 4.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 10 9.143V4.857A.857.857 0 0 0 9.143 4Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286A.857.857 0 0 0 20 9.143V4.857A.857.857 0 0 0 19.143 4Zm-10 10H4.857a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286A.857.857 0 0 0 9.143 14Zm10 0h-4.286a.857.857 0 0 0-.857.857v4.286c0 .473.384.857.857.857h4.286a.857.857 0 0 0 .857-.857v-4.286a.857.857 0 0 0-.857-.857Z" />
+                        </svg>
+                        Dashboard
+                    </a>
+                    <a href="#" class="link-selected">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512">
+                            <title>ionicons-v5-h</title>
+                            <path
+                                d="M469.71,234.6c-7.33-9.73-34.56-16.43-46.08-33.94s-20.95-55.43-50.27-70S288,112,256,112s-88,4-117.36,18.63-38.75,52.52-50.27,70S49.62,224.87,42.29,234.6,29.8,305.84,32.94,336s9,48,9,48h86c14.08,0,18.66-5.29,47.46-8C207,373,238,372,256,372s50,1,81.58,4c28.8,2.73,33.53,8,47.46,8h85s5.86-17.84,9-48S477,244.33,469.71,234.6Z"
+                                style="fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                            <rect x="400" y="384" width="56" height="16"
+                                style="fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                            <rect x="56" y="384" width="56" height="16"
+                                style="fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                            <path style="stroke: #136591; fill:#136591"
+                                d="M364.47,309.16c-5.91-6.83-25.17-12.53-50.67-16.35S279,288,256.2,288s-33.17,1.64-57.61,4.81-42.79,8.81-50.66,16.35C136.12,320.6,153.42,333.44,167,335c13.16,1.5,39.47.95,89.31.95s76.15.55,89.31-.95C359.18,333.35,375.24,321.4,364.47,309.16Z" />
+                            <path style="stroke: #136591; fill:#136591"
+                                d="M431.57,243.05a3.23,3.23,0,0,0-3.1-3c-11.81-.42-23.8.42-45.07,6.69a93.88,93.88,0,0,0-30.08,15.06c-2.28,1.78-1.47,6.59,1.39,7.1A455.32,455.32,0,0,0,407.53,272c10.59,0,21.52-3,23.55-12.44A52.41,52.41,0,0,0,431.57,243.05Z" />
+                            <path style="stroke: #136591; fill:#136591"
+                                d="M80.43,243.05a3.23,3.23,0,0,1,3.1-3c11.81-.42,23.8.42,45.07,6.69a93.88,93.88,0,0,1,30.08,15.06c2.28,1.78,1.47,6.59-1.39,7.1A455.32,455.32,0,0,1,104.47,272c-10.59,0-21.52-3-23.55-12.44A52.41,52.41,0,0,1,80.43,243.05Z" />
+                            <line x1="432" y1="192" x2="448" y2="192"
+                                style="fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                            <line x1="64" y1="192" x2="80" y2="192"
+                                style="fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                            <path d="M78,211s46.35-12,178-12,178,12,178,12"
+                                style="fill:none;stroke:#136591;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                        </svg>
+                        Car Management
+                    </a>
+                    <a href="#">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 9h3m-3 3h3m-3 3h3m-6 1c-.306-.613-.933-1-1.618-1H7.618c-.685 0-1.312.387-1.618 1M4 5h16a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm7 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z" />
+                        </svg>
+                        Employee Management
+                    </a>
+                    <a href="#">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                                d="M4.5 17H4a1 1 0 0 1-1-1 3 3 0 0 1 3-3h1m0-3.05A2.5 2.5 0 1 1 9 5.5M19.5 17h.5a1 1 0 0 0 1-1 3 3 0 0 0-3-3h-1m0-3.05a2.5 2.5 0 1 0-2-4.45m.5 13.5h-7a1 1 0 0 1-1-1 3 3 0 0 1 3-3h3a3 3 0 0 1 3 3 1 1 0 0 1-1 1Zm-1-9.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+                        </svg>
+                        Customer Management
+                    </a>
+                </div>
+            </div>
+            <div class="logout-settings-div">
+                <a href="#">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M21 13v-2a1 1 0 0 0-1-1h-.757l-.707-1.707.535-.536a1 1 0 0 0 0-1.414l-1.414-1.414a1 1 0 0 0-1.414 0l-.536.535L14 4.757V4a1 1 0 0 0-1-1h-2a1 1 0 0 0-1 1v.757l-1.707.707-.536-.535a1 1 0 0 0-1.414 0L4.929 6.343a1 1 0 0 0 0 1.414l.536.536L4.757 10H4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h.757l.707 1.707-.535.536a1 1 0 0 0 0 1.414l1.414 1.414a1 1 0 0 0 1.414 0l.536-.535 1.707.707V20a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-.757l1.707-.708.536.536a1 1 0 0 0 1.414 0l1.414-1.414a1 1 0 0 0 0-1.414l-.535-.536.707-1.707H20a1 1 0 0 0 1-1Z" />
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    </svg>
+                    settings
+                </a>
+                <a href="login.html" class="logout-btn">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20 12H8m12 0-4 4m4-4-4-4M9 4H7a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h2" />
+                    </svg>
+                    Logout
+                </a>
+            </div>
+        </div>
+        <div class="main">
+            <div class="nav">
+                <div class="search-bar">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="m21 21-3.5-3.5M17 10a7 7 0 1 1-14 0 7 7 0 0 1 14 0Z" />
+                    </svg>
+                    <input type="text" name="search" id="searchBar" placeholder="Search for cars" autocomplete="off">
+                </div>
+                <div class="profile-div">
+                    <div class="notification">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 5.365V3m0 2.365a5.338 5.338 0 0 1 5.133 5.368v1.8c0 2.386 1.867 2.982 1.867 4.175 0 .593 0 1.292-.538 1.292H5.538C5 18 5 17.301 5 16.708c0-1.193 1.867-1.789 1.867-4.175v-1.8A5.338 5.338 0 0 1 12 5.365ZM8.733 18c.094.852.306 1.54.944 2.112a3.48 3.48 0 0 0 4.646 0c.638-.572 1.236-1.26 1.33-2.112h-6.92Z" />
+                        </svg>
+                    </div>
+                    <div class="profile">
+                        <div class="profile-img" id="logoProfile"></div>
+                        <div class="profile-info">
+                            <h4 id="fullName"></h4>
+                            <p id="admin-position">Head Admin</p>
+                        </div>
+                        <script>
+                            // Retrieve user data from localStorage
+                            var userData = JSON.parse(localStorage.getItem('loggedInUser'));
+
+                            if (userData) {
+                                // Update logo-profile element
+                                var logoProfileElement = document.getElementById('logoProfile');
+                                logoProfileElement.textContent = userData.full_name.charAt(0) + userData.full_name.split(' ')[1].charAt(0);
+
+                                // Update fullName element
+                                var fullNameElement = document.getElementById('fullName');
+                                fullNameElement.textContent = userData.full_name;
+                            }
+                        </script>
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m19 9-7 7-7-7" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sub-nav">
+                <h1>Cars Table</h1>
+                <div class="buttons-div">
+                    <div class="calendar">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.75"
+                                d="M4 10h16m-8-3V4M7 7V4m10 3V4M5 20h14a1 1 0 0 0 1-1V7a1 1 0 0 0-1-1H5a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Zm3-7h.01v.01H8V13Zm4 0h.01v.01H12V13Zm4 0h.01v.01H16V13Zm-8 4h.01v.01H8V17Zm4 0h.01v.01H12V17Zm4 0h.01v.01H16V17Z" />
+                        </svg>
+                        <p id="today-date">October 24, 2024</p>
+                        <script>
+                            var today = new Date();
+
+                            var day = today.getDate();
+                            var month = today.toLocaleString('default', { month: 'long' });
+                            var year = today.getFullYear();
+
+                            document.getElementById('today-date').innerHTML = month + ' ' + day + ', ' + year;
+                        </script>
+                    </div>
+                    <div class="export" id="export-csv">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.75"
+                                d="M4 15v2a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-2M12 4v12m0-12 4 4m-4-4L8 8" />
+                        </svg>
+                        Export CSV
+                    </div>
+                    <div class="add-car">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 7.757v8.486M7.757 12h8.486M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                        </svg>
+                        Add Car
+                    </div>
+                </div>
+            </div>
+
+            <div class="table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th id="col-title">ID</th>
+                            <th id="col-title">Make</th>
+                            <th id="col-title">Model</th>
+                            <!-- <th id="col-title">Year</th> -->
+                            <th id="col-title">Type</th>
+                            <!-- <th id="col-title">Fuel</th> -->
+                            <th id="col-title">Location</th>
+                            <th id="col-title">Price</th>
+                            <th id="col-title">Reservation</th>
+                            <th id="col-title">Availability</th>
+                            <th id="col-title">Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table-body"></tbody>
+                </table>
+            </div>
+
+            <div id="pagination"></div>
+
+            <div id="overlay"></div>
+            <div class="modal" id="addCar-modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4>Add Car</h4>
+                        <span class="close">&times;</span>
+                    </div>
+                </div>
+
+                <div class="modal-center">
+
+
+                    <div class="textbox ">
+                        <label for="model">ID (Preferably Car Plate Number)</label>
+                        <input id="id" type="text" placeholder="add your ID">
+                    </div>
+
+                    <div class="twoTextbox">
+                        <div class="textbox left">
+                            <label for="model">Model</label>
+                            <input id="model" type="text" placeholder="add Model">
+                        </div>
+
+
+                        <div class="textbox right">
+                            <label for="type">Car Brand</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="Car-brand"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select car Brand
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="Car-brand">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Mercedes')">Mercedes</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Peugeot')">Peugeot</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Smart')">Smart</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Volkswagen')">Volkswagen</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Citroen')">Citroen</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Ford')">Ford</button></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="twoTextbox">
+
+                        <div class="textbox left">
+                            <label for="type">Location</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="Location"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Location
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="Location">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('New York, USA')">New York, USA</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('London, UK')">London, UK</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Paris, France')">Paris, France</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Beirut, Lebanon')">Beirut, Lebanon</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Rome, Italy')">Rome, Italy</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Milan, Italy')">Milan, Italy</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="textbox right">
+                            <label for="type">Car Type</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="car-type"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select car type
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="car-type">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('SUV')">SUV</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Hatchback')">Hatchback</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('MPV')">MPV</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Sedan')">Sedan</button></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="twoTextbox">
+
+                        <div class="textbox left">
+                            <label for="type">Fuel Type</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="fuel-type"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select fuel type
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="fuel-type">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Diesel')">Diesel</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Fuel')">Fuel</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Hybrid')">Hybrid</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Electric')">Electric</button></li>
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="textbox right">
+                            <label for="type">Year</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="year"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Year
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="year">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2015')">2015</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2016')">2016</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2017')">2017</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2018')">2018</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2019')">2019</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2020')">2020</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2021')">2021</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2022')">2022</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2023')">2023</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('2024')">2024</button></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="twoTextbox ">
+                        <div class="number-input left">
+                            <label for="Passengers">Passengers</label>
+                            <input type="number" id="Passengers" value="2" max="30" min="2">
+                        </div>
+
+                        <div class="number-input right">
+                            <label for="Door">Door</label>
+                            <input type="number" id="Door" value="2" max="5" min="2">
+                        </div>
+
+                    </div>
+                    <div class="twoTextbox ">
+                        <div class="number-input left">
+                            <label for="Baggages">Baggages</label>
+                            <input type="number" id="Baggages" value="0" max="15" min="0">
+                        </div>
+
+                        <div class="number-input right">
+                            <label for="Price">Price</label>
+                            <input type="number" id="Price" value="50" max="300" min="">
+                        </div>
+
+                    </div>
+
+
+                    <div class="twoTextbox">
+
+                        <div class="textbox left">
+                            <label for="type">Transmission</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="transmission"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select transmission
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="transmission">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Automatic')">Automatic</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('Manuel')">Manuel</button></li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+
+
+                        <div class="textbox right">
+                            <label for="type">Currency</label>
+                            <div class="dropdown">
+                                <button class="btn btn-custom dropdown-toggle" type="button" id="currency"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Select Currency
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="currency">
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('USD')">USD</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('EUR')">EUR</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('JPY')">JPY</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('GBP')">GBP</button></li>
+                                    <li><button class="dropdown-item dropdown-item-custom" type="button"
+                                            onclick="selectItem('AUD')">AUD</button></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="radio-holder">
+                        <label for="">price_basis :</label>
+                        <div class="radio-box">
+                            <input type="radio" name="price" id="day">
+                            <label for="day">Day</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="price" id="week">
+                            <label for="week">Week</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="price" id="month">
+                            <label for="month">month</label>
+                        </div>
+                    </div>
+
+                    <div class="radio-holder">
+                        <label for="">Air Condition :</label>
+                        <div class="radio-box">
+                            <input type="radio" name="Air" id="available">
+                            <label for="available">Available</label>
+                        </div>
+                        <div class="radio-box">
+                            <input type="radio" name="Air" id="Unavailable">
+                            <label for="Unavailable">Unavailable</label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="wrapper">
+                        <header>Upload Car Image</header>
+
+                        <form id="uploadForm">
+                            <input id="fileInput" class="file-input" type="file" name="file" hidden>
+                            <i class="fas fa-cloud-upload-alt" id="uploadIcon"></i>
+                            <p id="uploadText">Browse File to Upload</p>
+                        </form>
+                        <section class="progress-area" id="progressArea"></section>
+                        <section class="uploaded-area" id="uploadedArea"></section>
+                    </div>
+
+
+                    <input type="button" value="Add Car" class="add-btn">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+
+
+</body>
+
+</html>

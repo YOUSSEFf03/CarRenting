@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carro | Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="rome.css">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="./imported css/bootstrap.min.css"> -->
+
+    <!-- Style -->
+    <!-- <link rel="stylesheet" href="./imported css/style.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header" data-header>
+        <div class="container">
+            <div class="overlay" data-overlay></div>
+
+            <a href="index.html">
+                <!-- <h1 class="logo active" data-logo>Car Rental</h1> -->
+                <svg width="201" height="43" viewBox="0 0 201 43" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    class="logo-header">
+                    <path
+                        d="M10.1124 9.05263C10.1124 4.053 14.1368 0 19.1011 0H41.573C51.5017 0 59.5506 8.106 59.5506 18.1053H91.0112C95.9756 18.1053 100 22.1583 100 27.1579C100 32.1575 95.9756 36.2105 91.0112 36.2105H68.5393C58.6106 36.2105 50.5618 28.1045 50.5618 18.1053H19.1011C14.1368 18.1053 10.1124 14.0523 10.1124 9.05263Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M20.2247 32.8158C20.2247 38.4404 15.6973 43 10.1124 43C4.52745 43 0 38.4404 0 32.8158C0 27.1912 4.52745 22.6316 10.1124 22.6316C15.6973 22.6316 20.2247 27.1912 20.2247 32.8158Z"
+                        fill="#00A59B" />
+                    <path
+                        d="M108.945 21.365C108.945 19.8483 109.225 18.3667 109.785 16.92C110.345 15.45 111.162 14.12 112.235 12.93C113.308 11.74 114.615 10.795 116.155 10.095C117.695 9.37167 119.445 9.01 121.405 9.01C123.738 9.01 125.757 9.51167 127.46 10.515C129.187 11.5183 130.47 12.825 131.31 14.435L126.9 17.515C126.527 16.6283 126.025 15.94 125.395 15.45C124.788 14.96 124.112 14.6217 123.365 14.435C122.642 14.225 121.942 14.12 121.265 14.12C120.168 14.12 119.212 14.3417 118.395 14.785C117.578 15.205 116.902 15.7767 116.365 16.5C115.828 17.2233 115.432 18.0283 115.175 18.915C114.918 19.8017 114.79 20.6883 114.79 21.575C114.79 22.555 114.942 23.5 115.245 24.41C115.548 25.32 115.98 26.125 116.54 26.825C117.123 27.525 117.823 28.085 118.64 28.505C119.457 28.9017 120.355 29.1 121.335 29.1C122.035 29.1 122.747 28.9833 123.47 28.75C124.193 28.5167 124.858 28.155 125.465 27.665C126.095 27.1517 126.573 26.4867 126.9 25.67L131.59 28.435C131.1 29.6483 130.295 30.6867 129.175 31.55C128.055 32.4133 126.783 33.0783 125.36 33.545C123.96 33.9883 122.572 34.21 121.195 34.21C119.398 34.21 117.742 33.8483 116.225 33.125C114.732 32.3783 113.437 31.3983 112.34 30.185C111.267 28.9483 110.427 27.5717 109.82 26.055C109.237 24.515 108.945 22.9517 108.945 21.365Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M132.867 28.505C132.867 27.2917 133.205 26.23 133.882 25.32C134.558 24.41 135.492 23.6983 136.682 23.185C137.872 22.6483 139.237 22.38 140.777 22.38C141.523 22.38 142.258 22.45 142.982 22.59C143.705 22.7067 144.335 22.8817 144.872 23.115V22.31C144.872 21.3067 144.568 20.5367 143.962 20C143.355 19.4633 142.433 19.195 141.197 19.195C140.17 19.195 139.202 19.37 138.292 19.72C137.405 20.07 136.46 20.5717 135.457 21.225L133.777 17.655C134.99 16.8617 136.25 16.2667 137.557 15.87C138.887 15.4733 140.287 15.275 141.757 15.275C144.51 15.275 146.645 15.94 148.162 17.27C149.702 18.5767 150.472 20.4783 150.472 22.975V27.77C150.472 28.33 150.553 28.7267 150.717 28.96C150.903 29.17 151.218 29.2983 151.662 29.345V34C151.195 34.0933 150.752 34.1633 150.332 34.21C149.935 34.2567 149.585 34.28 149.282 34.28C148.232 34.28 147.427 34.07 146.867 33.65C146.33 33.23 145.992 32.6583 145.852 31.935L145.747 31.13C144.93 32.18 143.95 32.985 142.807 33.545C141.687 34.0817 140.508 34.35 139.272 34.35C138.058 34.35 136.962 34.0933 135.982 33.58C135.025 33.0667 134.267 32.3667 133.707 31.48C133.147 30.5933 132.867 29.6017 132.867 28.505ZM143.997 29.205C144.253 28.995 144.463 28.7617 144.627 28.505C144.79 28.2483 144.872 28.0033 144.872 27.77V26.125C144.405 25.9383 143.88 25.7983 143.297 25.705C142.737 25.5883 142.212 25.53 141.722 25.53C140.695 25.53 139.843 25.7633 139.167 26.23C138.49 26.6733 138.152 27.2683 138.152 28.015C138.152 28.435 138.268 28.82 138.502 29.17C138.735 29.52 139.05 29.8 139.447 30.01C139.867 30.22 140.357 30.325 140.917 30.325C141.477 30.325 142.037 30.22 142.597 30.01C143.157 29.8 143.623 29.5317 143.997 29.205Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M166.184 20.42C164.831 20.42 163.606 20.6417 162.509 21.085C161.413 21.505 160.619 22.135 160.129 22.975V34H154.529V15.625H159.674V19.335C160.304 18.0983 161.121 17.13 162.124 16.43C163.128 15.73 164.178 15.3683 165.274 15.345C165.531 15.345 165.718 15.345 165.834 15.345C165.974 15.345 166.091 15.3567 166.184 15.38V20.42Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M180.198 20.42C178.845 20.42 177.62 20.6417 176.523 21.085C175.426 21.505 174.633 22.135 174.143 22.975V34H168.543V15.625H173.688V19.335C174.318 18.0983 175.135 17.13 176.138 16.43C177.142 15.73 178.191 15.3683 179.288 15.345C179.545 15.345 179.731 15.345 179.848 15.345C179.988 15.345 180.105 15.3567 180.198 15.38V20.42Z"
+                        fill="#167FB3" />
+                    <path
+                        d="M191.17 34.35C189.607 34.35 188.207 34.0933 186.97 33.58C185.757 33.0667 184.73 32.3667 183.89 31.48C183.05 30.5933 182.408 29.5783 181.965 28.435C181.545 27.2917 181.335 26.09 181.335 24.83C181.335 23.5467 181.545 22.3333 181.965 21.19C182.408 20.0467 183.05 19.0317 183.89 18.145C184.73 17.2583 185.757 16.5583 186.97 16.045C188.207 15.5317 189.607 15.275 191.17 15.275C192.733 15.275 194.122 15.5317 195.335 16.045C196.548 16.5583 197.575 17.2583 198.415 18.145C199.255 19.0317 199.897 20.0467 200.34 21.19C200.783 22.3333 201.005 23.5467 201.005 24.83C201.005 26.09 200.783 27.2917 200.34 28.435C199.897 29.5783 199.255 30.5933 198.415 31.48C197.575 32.3667 196.548 33.0667 195.335 33.58C194.122 34.0933 192.733 34.35 191.17 34.35ZM187.075 24.83C187.075 25.7867 187.25 26.6267 187.6 27.35C187.973 28.0733 188.463 28.6333 189.07 29.03C189.677 29.4267 190.377 29.625 191.17 29.625C191.94 29.625 192.628 29.4267 193.235 29.03C193.865 28.61 194.355 28.0383 194.705 27.315C195.055 26.5917 195.23 25.7633 195.23 24.83C195.23 23.8733 195.055 23.0333 194.705 22.31C194.355 21.5867 193.865 21.0267 193.235 20.63C192.628 20.2333 191.94 20.035 191.17 20.035C190.377 20.035 189.677 20.2333 189.07 20.63C188.463 21.0267 187.973 21.5867 187.6 22.31C187.25 23.0333 187.075 23.8733 187.075 24.83Z"
+                        fill="#167FB3" />
+                </svg>
+            </a>
+
+            <nav class="navbar" data-navbar>
+                <div class="navbar-top">
+                    <!-- <a href="index.html" class="logo-nav">Car Rental</a> -->
+                    <a href="index.html" class="logo-nav">
+                        <!-- <h1 class="logo active" data-logo>Car Rental</h1> -->
+                        <svg width="101" height="23" viewBox="0 0 201 43" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.1124 9.05263C10.1124 4.053 14.1368 0 19.1011 0H41.573C51.5017 0 59.5506 8.106 59.5506 18.1053H91.0112C95.9756 18.1053 100 22.1583 100 27.1579C100 32.1575 95.9756 36.2105 91.0112 36.2105H68.5393C58.6106 36.2105 50.5618 28.1045 50.5618 18.1053H19.1011C14.1368 18.1053 10.1124 14.0523 10.1124 9.05263Z"
+                                fill="#167FB3" />
+                            <path
+                                d="M20.2247 32.8158C20.2247 38.4404 15.6973 43 10.1124 43C4.52745 43 0 38.4404 0 32.8158C0 27.1912 4.52745 22.6316 10.1124 22.6316C15.6973 22.6316 20.2247 27.1912 20.2247 32.8158Z"
+                                fill="#00A59B" />
+                            <path
+                                d="M108.945 21.365C108.945 19.8483 109.225 18.3667 109.785 16.92C110.345 15.45 111.162 14.12 112.235 12.93C113.308 11.74 114.615 10.795 116.155 10.095C117.695 9.37167 119.445 9.01 121.405 9.01C123.738 9.01 125.757 9.51167 127.46 10.515C129.187 11.5183 130.47 12.825 131.31 14.435L126.9 17.515C126.527 16.6283 126.025 15.94 125.395 15.45C124.788 14.96 124.112 14.6217 123.365 14.435C122.642 14.225 121.942 14.12 121.265 14.12C120.168 14.12 119.212 14.3417 118.395 14.785C117.578 15.205 116.902 15.7767 116.365 16.5C115.828 17.2233 115.432 18.0283 115.175 18.915C114.918 19.8017 114.79 20.6883 114.79 21.575C114.79 22.555 114.942 23.5 115.245 24.41C115.548 25.32 115.98 26.125 116.54 26.825C117.123 27.525 117.823 28.085 118.64 28.505C119.457 28.9017 120.355 29.1 121.335 29.1C122.035 29.1 122.747 28.9833 123.47 28.75C124.193 28.5167 124.858 28.155 125.465 27.665C126.095 27.1517 126.573 26.4867 126.9 25.67L131.59 28.435C131.1 29.6483 130.295 30.6867 129.175 31.55C128.055 32.4133 126.783 33.0783 125.36 33.545C123.96 33.9883 122.572 34.21 121.195 34.21C119.398 34.21 117.742 33.8483 116.225 33.125C114.732 32.3783 113.437 31.3983 112.34 30.185C111.267 28.9483 110.427 27.5717 109.82 26.055C109.237 24.515 108.945 22.9517 108.945 21.365Z"
+                                fill="#167FB3" />
+                            <path
+                                d="M132.867 28.505C132.867 27.2917 133.205 26.23 133.882 25.32C134.558 24.41 135.492 23.6983 136.682 23.185C137.872 22.6483 139.237 22.38 140.777 22.38C141.523 22.38 142.258 22.45 142.982 22.59C143.705 22.7067 144.335 22.8817 144.872 23.115V22.31C144.872 21.3067 144.568 20.5367 143.962 20C143.355 19.4633 142.433 19.195 141.197 19.195C140.17 19.195 139.202 19.37 138.292 19.72C137.405 20.07 136.46 20.5717 135.457 21.225L133.777 17.655C134.99 16.8617 136.25 16.2667 137.557 15.87C138.887 15.4733 140.287 15.275 141.757 15.275C144.51 15.275 146.645 15.94 148.162 17.27C149.702 18.5767 150.472 20.4783 150.472 22.975V27.77C150.472 28.33 150.553 28.7267 150.717 28.96C150.903 29.17 151.218 29.2983 151.662 29.345V34C151.195 34.0933 150.752 34.1633 150.332 34.21C149.935 34.2567 149.585 34.28 149.282 34.28C148.232 34.28 147.427 34.07 146.867 33.65C146.33 33.23 145.992 32.6583 145.852 31.935L145.747 31.13C144.93 32.18 143.95 32.985 142.807 33.545C141.687 34.0817 140.508 34.35 139.272 34.35C138.058 34.35 136.962 34.0933 135.982 33.58C135.025 33.0667 134.267 32.3667 133.707 31.48C133.147 30.5933 132.867 29.6017 132.867 28.505ZM143.997 29.205C144.253 28.995 144.463 28.7617 144.627 28.505C144.79 28.2483 144.872 28.0033 144.872 27.77V26.125C144.405 25.9383 143.88 25.7983 143.297 25.705C142.737 25.5883 142.212 25.53 141.722 25.53C140.695 25.53 139.843 25.7633 139.167 26.23C138.49 26.6733 138.152 27.2683 138.152 28.015C138.152 28.435 138.268 28.82 138.502 29.17C138.735 29.52 139.05 29.8 139.447 30.01C139.867 30.22 140.357 30.325 140.917 30.325C141.477 30.325 142.037 30.22 142.597 30.01C143.157 29.8 143.623 29.5317 143.997 29.205Z"
+                                fill="#167FB3" />
+                            <path
+                                d="M166.184 20.42C164.831 20.42 163.606 20.6417 162.509 21.085C161.413 21.505 160.619 22.135 160.129 22.975V34H154.529V15.625H159.674V19.335C160.304 18.0983 161.121 17.13 162.124 16.43C163.128 15.73 164.178 15.3683 165.274 15.345C165.531 15.345 165.718 15.345 165.834 15.345C165.974 15.345 166.091 15.3567 166.184 15.38V20.42Z"
+                                fill="#167FB3" />
+                            <path
+                                d="M180.198 20.42C178.845 20.42 177.62 20.6417 176.523 21.085C175.426 21.505 174.633 22.135 174.143 22.975V34H168.543V15.625H173.688V19.335C174.318 18.0983 175.135 17.13 176.138 16.43C177.142 15.73 178.191 15.3683 179.288 15.345C179.545 15.345 179.731 15.345 179.848 15.345C179.988 15.345 180.105 15.3567 180.198 15.38V20.42Z"
+                                fill="#167FB3" />
+                            <path
+                                d="M191.17 34.35C189.607 34.35 188.207 34.0933 186.97 33.58C185.757 33.0667 184.73 32.3667 183.89 31.48C183.05 30.5933 182.408 29.5783 181.965 28.435C181.545 27.2917 181.335 26.09 181.335 24.83C181.335 23.5467 181.545 22.3333 181.965 21.19C182.408 20.0467 183.05 19.0317 183.89 18.145C184.73 17.2583 185.757 16.5583 186.97 16.045C188.207 15.5317 189.607 15.275 191.17 15.275C192.733 15.275 194.122 15.5317 195.335 16.045C196.548 16.5583 197.575 17.2583 198.415 18.145C199.255 19.0317 199.897 20.0467 200.34 21.19C200.783 22.3333 201.005 23.5467 201.005 24.83C201.005 26.09 200.783 27.2917 200.34 28.435C199.897 29.5783 199.255 30.5933 198.415 31.48C197.575 32.3667 196.548 33.0667 195.335 33.58C194.122 34.0933 192.733 34.35 191.17 34.35ZM187.075 24.83C187.075 25.7867 187.25 26.6267 187.6 27.35C187.973 28.0733 188.463 28.6333 189.07 29.03C189.677 29.4267 190.377 29.625 191.17 29.625C191.94 29.625 192.628 29.4267 193.235 29.03C193.865 28.61 194.355 28.0383 194.705 27.315C195.055 26.5917 195.23 25.7633 195.23 24.83C195.23 23.8733 195.055 23.0333 194.705 22.31C194.355 21.5867 193.865 21.0267 193.235 20.63C192.628 20.2333 191.94 20.035 191.17 20.035C190.377 20.035 189.677 20.2333 189.07 20.63C188.463 21.0267 187.973 21.5867 187.6 22.31C187.25 23.0333 187.075 23.8733 187.075 24.83Z"
+                                fill="#167FB3" />
+                        </svg>
+                    </a>
+
+                    <button class="nav-close-btn" aria-label="close menu" data-nav-close-btn>
+                        <ion-icon name="close-outline"></ion-icon>
+                    </button>
+                </div>
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="index.html" class="navbar-link" data-navbar-link>Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#about" class="navbar-link" data-navbar-link>About</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#get-car" class="navbar-link" data-navbar-link>Get a car</a>
+                    </li>
+                    <!-- <li class="navbar-item">
+                        <a href="#features" class="navbar-link" data-navbar-link>Features</a>
+                    </li> -->
+                    <li class="navbar-item">
+                        <a href="#contactus" class="navbar-link" data-navbar-link>Contact</a>
+                    </li>
+                    <li class="navbar-item" id="login-nav">
+                        <a href="login.html" style="width: 100%;" class="navbar-link" data-navbar-link>Log-in</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="login.html" class="login-btn">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <span>Log-in</span>
+            </a>
+
+            <button class="nav-open-btn" aria-label="open menu" data-nav-open-btn>
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Wheels on Demand</h1>
+            <p>Discover freedom on wheels! Find your perfect ride from our diverse fleet. Easy booking, great rates, and
+                endless adventures await. Start your journey today!
+            </p>
+            <a href="#get-car">
+                <button class="explore-btn">
+                    Explore
+                    <div class="arrow-wrapper">
+                        <div class="arrow"></div>
+                    </div>
+                </button>
+            </a>
+        </div>
+        <div class="hero-img">
+            <div class="blob1"></div>
+            <div class="blob2"></div>
+            <!-- <div class="blob"></div> -->
+            <img src="pexels-antoni-shkraba-7144174.jpg" alt="">
+            <!-- <video src="./Assets/videos/mixkit-giving-a-car-key-to-client-24454-medium.mp4" autoplay muted loop></video> -->
+        </div>
+    </section>
+
+    <section class="find-a-car" id="get-car">
+        <div class="search-bar">
+            <div class="box-element">
+                <span>
+                    <div class="picker" id="picker-location">
+                        <h4>Location</h4>
+                        <ion-icon name="chevron-down-outline"></ion-icon>
+                    </div>
+                    <div class="dropdown">
+                        <a href="#" class="option">New York, USA</a>
+                        <a href="#" class="option">London, UK</a>
+                        <a href="#" class="option">Paris, France</a>
+                        <a href="#" class="option">Beirut, Lebanon</a>
+                        <a href="#" class="option">Rome, Italy</a>
+                        <a href="#" class="option">Milan, Italy</a>
+                    </div>
+                    <div class="picked">
+                        <div>
+                            <ion-icon name="location-outline"></ion-icon>
+                            <p id="location-p">Please select an option</p>
+                            <!-- <input type="text" id="locationInput" placeholder="Enter a location"> -->
+                            <!-- <input type="text" id='ddlelement' /> -->
+                        </div>
+                        <!-- <div id="locationOptions" class="dropdown"></div> -->
+                    </div>
+                </span>
+            </div>
+            <div class="box-element">
+                <span>
+                    <div class="picker" onclick="showCalendar('pickup')">
+                        <h4>Pick-up Date &amp; Time</h4>
+                        <!-- <ion-icon name="chevron-down-outline"></ion-icon> -->
+                    </div>
+                    <div class="picked">
+                        <ion-icon name="time-outline"></ion-icon>
+                        <!-- <p id="pickupDateTime">February 24, 1:00 PM</p> -->
+                        <input type="text" class="form-control" id="input_from" placeholder="Pick-up Date">
+                    </div>
+                </span>
+            </div>
+            <span id="last-part" class="box-element">
+                <div class="picker" onclick="showCalendar('dropoff')">
+                    <h4>Drop-off Date &amp; Time</h4>
+                    <!-- <ion-icon name="chevron-down-outline"></ion-icon> -->
+                </div>
+                <div class="picked">
+                    <ion-icon name="time-outline"></ion-icon>
+                    <!-- <p id="dropoffDateTime">February 25, 4:00 PM</p> -->
+                    <input type="text" class="form-control" id="input_to" placeholder="Drop-off Date">
+                </div>
+            </span>
+            <div id="calendarPickup" class="calendar"></div>
+            <div id="calendarDropoff" class="calendar"></div>
+            <a id="btn-find-car" style="cursor: pointer;"><ion-icon name="car-sport-outline"></ion-icon>Get car</a>
+        </div>
+
+        <div class="filter-n-sort-clear">
+            <div class="filter-n-sort">
+                <button class="filter-button">
+                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-width="2"
+                            d="M18.796 4H5.204a1 1 0 0 0-.753 1.659l5.302 6.058a1 1 0 0 1 .247.659v4.874a.5.5 0 0 0 .2.4l3 2.25a.5.5 0 0 0 .8-.4v-7.124a1 1 0 0 1 .247-.659l5.302-6.059c.566-.646.106-1.658-.753-1.658Z" />
+                    </svg>
+                    Filter
+                </button>
+                <div class="sort-dropdown">
+                    <button id="sort-select">
+                        <svg class="w-6 h-6 text-gray-800 dark:text-white sort_icon" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 20V10m0 10-3-3m3 3 3-3m5-13v10m0-10 3 3m-3-3-3 3" />
+                        </svg>
+                        Sort
+                    </button>
+                    <ul class="sort-menu">
+
+                        <li id="DesAscContainer">
+                            <span id="DesAscButton" id="ascendantDescendantSort">Descendant</span>
+                            <span class="arrow-container">
+
+                                <svg id="arrow_UP_DOWN" width="64px" height="64px" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                    <g id="SVGRepo_iconCarrier">
+                                        <path d="M12 5V19M12 5L6 11M12 5L18 11" stroke="#167fb3" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </g>
+                                </svg>
+                            </span>
+
+                        </li>
+
+                        <div style="width: 100%;height: 1px; background-color: rgb(163, 161, 161);"></div>
+
+                        <li class="options" id="sortByPrice">Price</li>
+                        <li class="options" id="sortByYear">Year</li>
+
+                    </ul>
+
+                </div>
+                <!-- <button onclick="clear_filters();" id="clear_filters_btn">Clear</button> -->
+            </div>
+            <button onclick="clear_filters();" id="clear_filters_btn">Clear</button>
+        </div>
+    </section>
+
+    <div id="overlay"></div>
+    <div id="filter-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4>Filters</h4>
+                <span class="close">&times;</span>
+            </div>
+            <div id="modalContent">
+                <div class="accordion__item">
+                    <button id="accordion__filter_header" class="accordion__question">
+                        Car Brand
+                    </button>
+                    <div class="accordion__collapse collapse">
+                        <div id="accordion__content_filter" class="accordion__content">
+                            <span style="line-height: 30px;">
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="CarBrand" id="Mercedes_brand">
+                                    <label for="Mercedes_brand">Mercedes</label>
+                                </div>
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="CarBrand" id="Peugeot_brand">
+                                    <label for="peugeot_brand">Peugeot</label>
+                                </div>
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="CarBrand" id="Smart_brand">
+                                    <label for="Smart_brand">Smart</label>
+                                </div>
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="CarBrand" id="Volkswagen_brand">
+                                    <label for="Volkswagen_brand">Volkswagen</label>
+                                </div>
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="CarBrand" id="Citroen_brand">
+                                    <label for="Citroen_brand">Citroen</label>
+                                </div>
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="CarBrand" id="Ford_brand">
+                                    <label for="Ford_brand">Ford</label>
+                                </div>
+                                <!-- <div class="filter_checkbox">
+                                    <input type="checkbox" name="peugeot" id="peugeot_brand">
+                                    <label for="peugeot_brand">Peugeot</label>
+                                </div>
+                                <div class="filter_checkbox">
+                                    <input type="checkbox" name="peugeot" id="peugeot_brand">
+                                    <label for="peugeot_brand">Peugeot</label> -->
+                        </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button id="accordion__filter_header" class="accordion__question">
+                    Price Range
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div id="accordion__content_filter" class="accordion__content">
+                        <span style="line-height: 30px;">
+                            <div class="wrapper">
+
+                                <div class="price-input">
+                                    <div class="field">
+                                        <span>Min</span>
+                                        <input type="number" class="input-min" id="price-min" value="0">
+                                    </div>
+                                    <div class="separator">-</div>
+                                    <div class="field">
+                                        <span>Max</span>
+                                        <input type="number" class="input-max" id="price-max" value="1000">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button id="accordion__filter_header" class="accordion__question">
+                    Year Range
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div id="accordion__content_filter" class="accordion__content">
+                        <span style="line-height: 30px;">
+                            <div class="wrapper">
+                                <div class="price-input">
+                                    <div class="field">
+                                        <span>Min</span>
+                                        <input type="number" class="input-min" id="year-min" value="2010">
+                                    </div>
+                                    <div class="separator">-</div>
+                                    <div class="field">
+                                        <span>Max</span>
+                                        <input type="number" class="input-max" id="year-max" value="2024">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button id="accordion__filter_header" class="accordion__question">
+                    Car Type
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div id="accordion__content_filter" class="accordion__content">
+                        <span style="line-height: 30px;">
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="CarType" id="Suv_type">
+                                <label for="Suv_type">SUV</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="CarType" id="Hatchback_type">
+                                <label for="Hatchback_type">Hatchback</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="CarType" id="Mpv_type">
+                                <label for="Mpv_type">MPV</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="CarType" id="Sedan_type">
+                                <label for="Sedan_type"></label>Sedan</label>
+                            </div>
+
+
+                    </div>
+                    </span>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button id="accordion__filter_header" class="accordion__question">
+                    Fuel Type
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div id="accordion__content_filter" class="accordion__content">
+                        <span style="line-height: 30px;">
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="FuelType" id="Diesel_type">
+                                <label for="Diesel_type">Diesel</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="FuelType" id="Fuel_type">
+                                <label for="Fuel_type">Fuel</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="FuelType" id="Hybrid_type">
+                                <label for="Hybrid_type">Hybrid</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="FuelType" id="Electric_type">
+                                <label for="Electric_type"></label>Electric</label>
+                            </div>
+
+
+                    </div>
+                    </span>
+                </div>
+            </div>
+            <div class="accordion__item">
+                <button id="accordion__filter_header" class="accordion__question">
+                    transmission
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div id="accordion__content_filter" class="accordion__content">
+                        <span style="line-height: 30px;">
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="Transmission_type" id="Automatic_type">
+                                <label for="Automatic_type">automatic</label>
+                            </div>
+                            <div class="filter_checkbox">
+                                <input type="checkbox" name="Transmission_type" id="Manual_type">
+                                <label for="manual_type">manual</label>
+                            </div>
+
+                    </div>
+                    </span>
+                </div>
+            </div>
+
+            <button onclick="filter()" class="submit_filters_btn" id="submit_filters_btn">Submit</button>
+        </div>
+    </div>
+    </div>
+
+    <section class="cars-section" id="carList">
+
+    </section>
+
+    <section class="steps">
+        <div class="steps-header">
+            <h3>Get started with simple steps</h3>
+            <p>Discover freedom on wheels! Find your perfect ride from our diverse fleet. Easy booking, great rates, and
+                endless adventures await. Start your journey today!
+            </p>
+        </div>
+        <div class="steps-details">
+            <div class="step-info">
+                <div class="blob-steps" id="step1">
+                    <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                        fill="currentColor" class="bi bi-person-check" viewBox="0 0 16 16">
+                        <path
+                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                            fill="white"></path>
+                        <path fill-rule="evenodd"
+                            d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <div class="step-detail">
+                    <h4>Register</h4>
+                    <p>Fill up your details and start your car subscription journey</p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step-info">
+                <div class="blob-steps" id="step2">
+                    <svg style="color: white; transform:rotate(180deg);" xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" viewBox="0 0 512 512">
+                        <path
+                            d="M469.71,234.6c-7.33-9.73-34.56-16.43-46.08-33.94s-20.95-55.43-50.27-70S288,112,256,112s-88,4-117.36,18.63-38.75,52.52-50.27,70S49.62,224.87,42.29,234.6,29.8,305.84,32.94,336s9,48,9,48h86c14.08,0,18.66-5.29,47.46-8C207,373,238,372,256,372s50,1,81.58,4c28.8,2.73,33.53,8,47.46,8h85s5.86-17.84,9-48S477,244.33,469.71,234.6Z"
+                            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:22px"
+                            fill="white"></path>
+                        <rect x="400" y="384" width="56" height="16"
+                            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:22px">
+                        </rect>
+                        <rect x="56" y="384" width="56" height="16"
+                            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:22px">
+                        </rect>
+                        <path
+                            d="M364.47,309.16c-5.91-6.83-25.17-12.53-50.67-16.35S279,288,256.2,288s-33.17,1.64-57.61,4.81-42.79,8.81-50.66,16.35C136.12,320.6,153.42,333.44,167,335c13.16,1.5,39.47.95,89.31.95s76.15.55,89.31-.95C359.18,333.35,375.24,321.4,364.47,309.16Z"
+                            fill="white"></path>
+                        <path
+                            d="M431.57,243.05a3.23,3.23,0,0,0-3.1-3c-11.81-.42-23.8.42-45.07,6.69a93.88,93.88,0,0,0-30.08,15.06c-2.28,1.78-1.47,6.59,1.39,7.1A455.32,455.32,0,0,0,407.53,272c10.59,0,21.52-3,23.55-12.44A52.41,52.41,0,0,0,431.57,243.05Z"
+                            fill="white"></path>
+                        <path
+                            d="M80.43,243.05a3.23,3.23,0,0,1,3.1-3c11.81-.42,23.8.42,45.07,6.69a93.88,93.88,0,0,1,30.08,15.06c2.28,1.78,1.47,6.59-1.39,7.1A455.32,455.32,0,0,1,104.47,272c-10.59,0-21.52-3-23.55-12.44A52.41,52.41,0,0,1,80.43,243.05Z"
+                            fill="white"></path>
+                        <line x1="432" y1="192" x2="448" y2="192"
+                            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:22px">
+                        </line>
+                        <line x1="64" y1="192" x2="80" y2="192"
+                            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:22px">
+                        </line>
+                        <path d="M78,211s46.35-12,178-12,178,12,178,12"
+                            style="fill:none;stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:22px"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <div class="step-detail">
+                    <h4>Choose a car</h4>
+                    <p>Choose your desired car from our fleet</p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step-info">
+                <div class="blob-steps" id="step3">
+                    <svg style="color: white; transform:rotate(270deg);" xmlns="http://www.w3.org/2000/svg" width="36"
+                        height="36" fill="currentColor" class="bi bi-bag-check" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M10.854 8.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708 0z"
+                            fill="white"></path>
+                        <path
+                            d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"
+                            fill="white"></path>
+                    </svg>
+                </div>
+                <div class="step-detail">
+                    <h4>Book</h4>
+                    <p>Reserve your car online or through our app</p>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="step-info">
+                <div class="blob-steps" id="step4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-steering-wheel"
+                        id="wheel" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="white"
+                        fill="none" style="transform: rotate(90deg);" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="12" r="9" />
+                        <circle cx="12" cy="12" r="2" />
+                        <line x1="12" y1="14" x2="12" y2="21" />
+                        <line x1="10" y1="12" x2="3.25" y2="10" />
+                        <line x1="14" y1="12" x2="20.75" y2="10" />
+                    </svg>
+                </div>
+                <div class="step-detail">
+                    <h4>Drive</h4>
+                    <p>Pick-up your car and hit the road</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="about">
+        <div class="why-us-content">
+            <h2>Why Choose Us</h2>
+            <p>We prioritize excellent service, flexibility in rental options, and peace of mind through comprehensive
+                safety measures. Choose us for reliability, affordability, and convinience in your travel plans.
+            </p>
+            <a style="--clr: #7808d0" class="button" href="#">
+                <span class="button__icon-wrapper">
+                    <svg width="10" class="button__icon-svg" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 14 15">
+                        <path fill="currentColor"
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                        </path>
+                    </svg>
+
+                    <svg class="button__icon-svg  button__icon-svg--copy" xmlns="http://www.w3.org/2000/svg" width="10"
+                        fill="none" viewBox="0 0 14 15">
+                        <path fill="currentColor"
+                            d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z">
+                        </path>
+                    </svg>
+                </span>
+                Learn More
+            </a>
+        </div>
+        <img src="why-us-img.jpg" alt="" class="why-us-img-phone">
+        <div class="why-us-img">
+            <div class="blob-why-us"></div>
+            <div class="why-us-info" id="why-us-info-1">
+                <svg style="color: #167fb3" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                    <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z" fill="#167fb3">
+                    </path>
+                    <path
+                        d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"
+                        fill="#167fb3"></path>
+                </svg>
+                <p>Zero down payment</p>
+            </div>
+            <div class="why-us-info" id="why-us-info-2">
+                <svg style="color: rgb(22, 127, 179);" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                    <path
+                        d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"
+                        fill="#167fb3"></path>
+                    <path
+                        d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"
+                        fill="#167fb3"></path>
+                </svg>
+                <p>Minimal Paperwork</p>
+            </div>
+            <div class="why-us-info" id="why-us-info-3">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="20" height="20">
+                    <rect width="16" height="16" fill="none" />
+                    <path d="M200,224H56a8,8,0,0,1-8-8V40a8,8,0,0,1,8-8h96l56,56V216A8,8,0,0,1,200,224Z" fill="none"
+                        stroke="#167fb3" stroke-linecap="round" stroke-linejoin="round" stroke-width="10" />
+                    <polyline points="148 32 148 92 208 92" fill="none" stroke="#167fb3" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="10" />
+                    <circle cx="124" cy="148" r="24" fill="none" stroke="#167fb3" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="10" />
+                    <line x1="141" y1="165" x2="159.8" y2="183.8" fill="none" stroke="#167fb3" stroke-linecap="round"
+                        stroke-linejoin="round" stroke-width="10" />
+                </svg>
+                <p>Transparent Pricing</p>
+            </div>
+
+            <img src="istockphoto-1364917563-1024x1024-removebg-preview.png" alt="" class="why-us-img-big">
+
+            <div class="why-us-info" id="why-us-info-4">
+                <svg width="16" height="16" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M19.1414 5C17.3265 3.14864 14.7974 2 12 2C6.47715 2 2 6.47715 2 12C2 14.7255 3.09032 17.1962 4.85857 19M19.1414 5C20.9097 6.80375 22 9.27455 22 12C22 17.5228 17.5228 22 12 22C9.20261 22 6.67349 20.8514 4.85857 19M19.1414 5L4.85857 19"
+                        stroke="#167fb3" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <p>Free cancellation</p>
+            </div>
+            <div class="why-us-info" id="why-us-info-5">
+                <svg style="color: rgb(22, 127, 179);" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 512 512">
+                    <title>ionicons-v5-m</title>
+                    <path
+                        d="M464,249.93a10.58,10.58,0,0,0-9.36-9.94L429,235.84a5.42,5.42,0,0,1-4.5-4.67c-.49-3.15-1-6.42-1.7-9.52a5.52,5.52,0,0,1,2.63-5.85l22.78-12.65a10.35,10.35,0,0,0,5-12.83l-3.95-10.9a10.32,10.32,0,0,0-12.13-6.51l-25.55,5a5.5,5.5,0,0,1-5.82-2.81c-1.49-2.79-3.11-5.63-4.8-8.42a5.6,5.6,0,0,1,.44-6.5l17-19.63a10.44,10.44,0,0,0,.39-13.77l-7.42-8.91a10.24,10.24,0,0,0-13.58-2l-22.37,13.43a5.39,5.39,0,0,1-6.39-.63c-2.47-2.17-4.95-4.26-7.37-6.19a5.45,5.45,0,0,1-1.72-6.21l9.26-24.4a10.35,10.35,0,0,0-4.31-13.07l-10.08-5.85a10.31,10.31,0,0,0-13.46,2.83L325,96.28A4.58,4.58,0,0,1,319.4,98c-.62-.25-5.77-2.36-9.78-3.7a5.42,5.42,0,0,1-3.74-5.23L306.27,63a10.48,10.48,0,0,0-8.57-10.88l-11.45-2a10.45,10.45,0,0,0-11.75,7.17L266,82.1a5.42,5.42,0,0,1-5.36,3.65h-9.75a5.53,5.53,0,0,1-5.3-3.67l-8.46-24.67a10.46,10.46,0,0,0-11.77-7.25l-11.46,2a10.46,10.46,0,0,0-8.57,10.79l.4,26.16a5.45,5.45,0,0,1-3.86,5.25c-2.28.89-7.26,2.78-9.51,3.63-2,.72-4.19-.07-6-2.1l-16.26-20A10.3,10.3,0,0,0,156.69,73l-10.06,5.83A10.36,10.36,0,0,0,142.31,92l9.25,24.34a5.54,5.54,0,0,1-1.7,6.23c-2.43,2-4.92,4-7.4,6.22a5.38,5.38,0,0,1-6.35.64L114,115.74a10.39,10.39,0,0,0-13.61,2l-7.4,8.9a10.32,10.32,0,0,0,.37,13.76L110.45,160a5.42,5.42,0,0,1,.45,6.45c-1.71,2.72-3.34,5.58-4.82,8.44a5.53,5.53,0,0,1-5.86,2.82l-25.51-4.93a10.34,10.34,0,0,0-12.14,6.51l-4,10.88a10.37,10.37,0,0,0,5,12.85l22.78,12.65A5.39,5.39,0,0,1,89,221.59l-.23,1.24c-.53,2.8-1,5.45-1.47,8.27a5.48,5.48,0,0,1-4.46,4.64l-25.7,4.15A10.42,10.42,0,0,0,48,250.16v11.58A10.26,10.26,0,0,0,57.16,272l25.68,4.14a5.41,5.41,0,0,1,4.5,4.67c.49,3.16,1,6.42,1.7,9.52a5.52,5.52,0,0,1-2.63,5.85L63.64,308.85a10.35,10.35,0,0,0-5,12.83l4,10.9a10.33,10.33,0,0,0,12.13,6.51l25.55-4.95a5.5,5.5,0,0,1,5.82,2.81c1.5,2.8,3.12,5.64,4.8,8.42a5.58,5.58,0,0,1-.44,6.5l-17,19.64A10.41,10.41,0,0,0,93,385.27l7.41,8.91a10.24,10.24,0,0,0,13.58,2l22.37-13.43a5.39,5.39,0,0,1,6.39.63c2.48,2.17,5,4.26,7.37,6.19a5.45,5.45,0,0,1,1.72,6.21l-9.26,24.4a10.35,10.35,0,0,0,4.31,13.07L157,439.09a10.3,10.3,0,0,0,13.45-2.82L187,415.92c1.39-1.73,3.6-2.5,5.24-1.84,3.47,1.44,5.8,2.25,9.93,3.63a5.44,5.44,0,0,1,3.75,5.23l-.4,26.05a10.5,10.5,0,0,0,8.57,10.88l11.45,2a10.44,10.44,0,0,0,11.75-7.17l8.5-24.77a5.48,5.48,0,0,1,5.36-3.65h9.75a5.52,5.52,0,0,1,5.3,3.67l8.47,24.67a10.48,10.48,0,0,0,10,7.41,9.74,9.74,0,0,0,1.78-.16l11.47-2a10.46,10.46,0,0,0,8.56-10.79l-.4-26.16a5.43,5.43,0,0,1,3.75-5.2c3.84-1.29,6.53-2.33,8.91-3.24l.6-.24c3.06-1.06,4.53.14,5.47,1.31l16.75,20.63A10.3,10.3,0,0,0,355,439l10.07-5.83a10.35,10.35,0,0,0,4.31-13.1l-9.24-24.34a5.52,5.52,0,0,1,1.69-6.23c2.43-2,4.92-4,7.4-6.22a5.39,5.39,0,0,1,6.38-.62L398,396.06a10.39,10.39,0,0,0,13.61-2l7.4-8.9a10.31,10.31,0,0,0-.37-13.75l-17.06-19.67a5.42,5.42,0,0,1-.45-6.45c1.71-2.71,3.34-5.57,4.82-8.44a5.56,5.56,0,0,1,5.86-2.82L437.29,339a10.34,10.34,0,0,0,12.14-6.51l3.95-10.88a10.36,10.36,0,0,0-5-12.84L425.58,296.1a5.4,5.4,0,0,1-2.61-5.89l.23-1.25c.53-2.8,1-5.44,1.47-8.26a5.48,5.48,0,0,1,4.46-4.64l25.7-4.14A10.43,10.43,0,0,0,464,261.64V249.93ZM171.59,361.27a135.12,135.12,0,0,1,.5-210.94l60,105.61ZM256,391.11a133.75,133.75,0,0,1-48.49-9.05L268,276.79H389.22C379.21,341.45,323.29,391.11,256,391.11Zm12.06-155.9-59.95-105.5A133.87,133.87,0,0,1,256,120.89c67.29,0,123.21,49.66,133.22,114.32Z"
+                        fill="#167fb3"></path>
+                </svg>
+                <p>Roadside Assistance 24/7</p>
+            </div>
+            <div class="why-us-info" id="why-us-info-6">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                    <g>
+                        <path fill="none" d="M0 0h24v24H0z" />
+                        <path fill-rule="nonzero" fill="#167fb3"
+                            d="M13 2.05c5.053.501 9 4.765 9 9.95v1h-9v6a2 2 0 1 0 4 0v-1h2v1a4 4 0 1 1-8 0v-6H2v-1c0-5.185 3.947-9.449 9-9.95V2a1 1 0 0 1 2 0v.05zM19.938 11a8.001 8.001 0 0 0-15.876 0h15.876z" />
+                    </g>
+                </svg>
+                <p>Comprehensive Insurance Coverage</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers" id="offers">
+        <div class="offers-header">
+            <h2>Offers</h2>
+            <p>Discover unbeatable deals and exclusive offers tailored just for you at our car rental service. Whether
+                you're planning a weekend getaway or a cross-country adventure, take advantage of our special discounts
+                and promotions to make your journey even more memorable. From discounted rates to complimentary
+                upgrades, we've got the perfect offer to suit every traveler's needs.
+            </p>
+        </div>
+        <div class="offers-container">
+            <div class="offer-card">
+                <img src="giving-a-key-from-new-car-at-dealership-showroom-2021-08-26-16-21-18-utc.jpg" alt="">
+                <h4>Weekend Specials</h4>
+                <p>Use code DR345 for a 20% discount on all cars for the upcoming weekend Apr 5, 6, 7</p>
+                <a href="#">Book now</a>
+            </div>
+            <div class="offer-card">
+                <img src="closeup-of-customer-and-car-dealer-shaking-hands-2022-12-16-06-32-18-utc.jpg" alt="">
+                <h4>Easter Deals</h4>
+                <p>Use code EA054 for a 15% discount on all cars for the upcoming Easter Week</p>
+                <a href="#">Book now</a>
+            </div>
+            <div class="offer-card">
+                <img src="pexels-antoni-shkraba-7144174.jpg" alt="">
+                <h4>Eid Deals</h4>
+                <p>Use code RA224 for a 15% discount on all cars for the upcoming days Apr 8, 9, 10</p>
+                <a href="#">Book now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-section" id="mobile-app">
+        <div class="app-img">
+            <img src="Group 15.png" alt="" class="group15-img">
+            <!-- <img src="Group 13.png" alt="" class="group13-img"> -->
+        </div>
+        <div class="app-sec-content">
+            <h3>Ready To Go?</h3>
+            <p>Book your car wherever you are and ride with us now!</p>
+            <div class="buttons-store">
+                <a href="#" class="playstore-button">
+                    <span class="icon">
+                        <svg fill="currentcolor" viewBox="-52.01 0 560.035 560.035" xmlns="http://www.w3.org/2000/svg"
+                            stroke="#ffffff">
+                            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                            <g id="SVGRepo_iconCarrier">
+                                <path
+                                    d="M380.844 297.529c.787 84.752 74.349 112.955 75.164 113.314-.622 1.988-11.754 40.191-38.756 79.652-23.343 34.117-47.568 68.107-85.731 68.811-37.499.691-49.557-22.236-92.429-22.236-42.859 0-56.256 21.533-91.753 22.928-36.837 1.395-64.889-36.891-88.424-70.883-48.093-69.53-84.846-196.475-35.496-282.165 24.516-42.554 68.328-69.501 115.882-70.192 36.173-.69 70.315 24.336 92.429 24.336 22.1 0 63.59-30.096 107.208-25.676 18.26.76 69.517 7.376 102.429 55.552-2.652 1.644-61.159 35.704-60.523 106.559M310.369 89.418C329.926 65.745 343.089 32.79 339.498 0 311.308 1.133 277.22 18.785 257 42.445c-18.121 20.952-33.991 54.487-29.709 86.628 31.421 2.431 63.52-15.967 83.078-39.655">
+                                </path>
+                            </g>
+                        </svg>
+                    </span>
+                    <span class="texts">
+                        <span class="text-1">Download from</span>
+                        <span class="text-2">App store</span>
+                    </span>
+                </a>
+                <a href="#" class="playstore-button">
+                    <span class="icon">
+                        <!-- <ion-icon name="logo-google-playstore"></ion-icon> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="google-play">
+                            <path fill="#2196F3"
+                                d="M8.32 7.68.58 15.42c-.37-.35-.57-.83-.57-1.35V1.93C.01 1.4.22.92.6.56l7.72 7.12z">
+                            </path>
+                            <path fill="#FFC107"
+                                d="M15.01 8c0 .7-.38 1.32-1.01 1.67l-2.2 1.22-2.73-2.52-.75-.69 2.89-2.89L14 6.33c.63.35 1.01.97 1.01 1.67z">
+                            </path>
+                            <path fill="#4CAF50"
+                                d="M8.32 7.68.6.56C.7.46.83.37.96.29 1.59-.09 2.35-.1 3 .26l8.21 4.53-2.89 2.89z">
+                            </path>
+                            <path fill="#F44336"
+                                d="M11.8 10.89 3 15.74c-.31.18-.66.26-1 .26-.36 0-.72-.09-1.04-.29a1.82 1.82 0 0 1-.38-.29l7.74-7.74.75.69 2.73 2.52z">
+                            </path>
+                        </svg>
+                    </span>
+                    <span class="texts">
+                        <span class="text-1">Download from</span>
+                        <span class="text-2">Play store</span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faqs" id="faqs">
+        <h2>FAQs</h2>
+        <div class="accordion">
+            <div class="accordion__item">
+                <button class="accordion__question">
+                    What documents do I need to rent a car?
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div class="accordion__content">
+                        To rent a car, you typically need:
+                        <br><br>
+                        <span style="line-height: 30px;">
+                            - A valid driver's license. <br>
+                            - A credit card for payment and deposit. <br>
+                            - Additional ID like a passport. <br>
+                            <!-- - Proof of insurance. <br>
+                            - Any specific requirements from the rental company. -->
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__question">
+                    How old do I need to be to rent a car?
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div class="accordion__content">
+                        The minimum age requirement is typically 21 years old, but it may vary by location. Some
+                        locations may require renters to be 25 or older.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__question">
+                    How can I make a reservation?
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div class="accordion__content">
+                        To make a reservation:
+                        <br><br>
+                        <span style="line-height: 30px;">
+                            1. Visit our website or app. <br>
+                            2. Select your desired rental dates and location. <br>
+                            3. Choose a vehicle category and any additional options. <br>
+                            4. Provide your contact and payment information. <br>
+                            5. Confirm your reservation details. <br>
+                            6. Receive a confirmation email or message. <br>
+                        </span>
+                        <br>
+                        You can also call our customer service for assistance.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__question">
+                    Can I modify or cancel my reservation?
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div class="accordion__content">
+                        Yes, you can modify or cancel your reservation at any time, free of charge.
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion__item">
+                <button class="accordion__question">
+                    Are there any hidden fees I should be aware of?
+                </button>
+                <div class="accordion__collapse collapse">
+                    <div class="accordion__content">
+                        No, you can rest assured that our pricing is transparent, and there are no hidden fees. What you
+                        see is what you pay on our website.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact co1-position-relative co1-z-index-1" id="contactus">
+        <div class="co1-container co1-max-width-lg">
+            <div class="co1-margin-bottom-lg">
+                <h1 class="co1-text-center">Contact Us</h1>
+            </div>
+
+            <div class="co1-grid co1-gap-y-lg co1-gap-lg@md">
+                <div class="co1-col-6@md">
+                    <dl class="details-list details-list--rows">
+                        <div class="details-list__item co1-padding-y-md co1-flex@md co1-justify-between@md">
+                            <dt class="co1-font-bold co1-margin-bottom-2xs co1-margin-bottom-0@md">Address</dt>
+                            <dd class="co1-line-height-md co1-text-right@md">
+                                2855 Waygand Rd <br>40107 <br>Beirut, Lebanon
+                            </dd>
+                        </div>
+
+                        <div class="details-list__item co1-padding-y-md co1-flex@md co1-justify-between@md">
+                            <dt class="co1-font-bold co1-margin-bottom-2xs co1-margin-bottom-0@md">Email</dt>
+                            <dd>
+                                <a href="mailto:support@carro.com">support@carro.com</a>
+                            </dd>
+                        </div>
+
+                        <div class="details-list__item co1-padding-y-md co1-flex@md co1-justify-between@md">
+                            <dt class="co1-font-bold co1-margin-bottom-2xs co1-margin-bottom-0@md">Phone</dt>
+                            <dd class="co1-line-height-md co1-text-right@md">
+                                <p><a href="tel:+961 01 111 111">+961 01 111 111</a></p>
+                                <p class="co1-color-contrast-medium">Mon - Fri, 9AM - 5PM</p>
+                            </dd>
+                        </div>
+                    </dl>
+                </div>
+
+                <!-- <div role="application"
+                    class="google-maps co1-radius-md co1-col-6@md co1-height-auto@md co1-padding-bottom-0@md js-google-maps"
+                    data-coordinates="51.5658015,-0.40339"></div> -->
+                <iframe
+                    class="google-maps co1-radius-md co1-col-6@md co1-height-auto@md co1-padding-bottom-0@md js-google-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13246.753919699966!2d35.506396!3d33.897676!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f16e5d7492ec5%3A0x374343120ee4ae3b!2sWaygand%2C%20Bayrut!5e0!3m2!1sen!2slb!4v1682365896412!5m2!1sen!2slb"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="newsletter-header">
+            <p id="small-text">Would you like to receive</p>
+            <p id="big-text">special offers by your email?</p>
+        </div>
+        <div class="email-div">
+            <div class="input-email">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input type="email" name="email" id="email-input" placeholder="Enter your email" autocomplete="off">
+            </div>
+            <button>Subscribe</button>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="brand-footer">
+            <a href="index.html">
+                <!-- <h1 class="logo active" data-logo>Car Rental</h1> -->
+                <svg width="201" height="43" viewBox="0 0 201 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10.1124 9.05263C10.1124 4.053 14.1368 0 19.1011 0H41.573C51.5017 0 59.5506 8.106 59.5506 18.1053H91.0112C95.9756 18.1053 100 22.1583 100 27.1579C100 32.1575 95.9756 36.2105 91.0112 36.2105H68.5393C58.6106 36.2105 50.5618 28.1045 50.5618 18.1053H19.1011C14.1368 18.1053 10.1124 14.0523 10.1124 9.05263Z"
+                        fill="white" />
+                    <path
+                        d="M20.2247 32.8158C20.2247 38.4404 15.6973 43 10.1124 43C4.52745 43 0 38.4404 0 32.8158C0 27.1912 4.52745 22.6316 10.1124 22.6316C15.6973 22.6316 20.2247 27.1912 20.2247 32.8158Z"
+                        fill="white" />
+                    <path
+                        d="M108.945 21.365C108.945 19.8483 109.225 18.3667 109.785 16.92C110.345 15.45 111.162 14.12 112.235 12.93C113.308 11.74 114.615 10.795 116.155 10.095C117.695 9.37167 119.445 9.01 121.405 9.01C123.738 9.01 125.757 9.51167 127.46 10.515C129.187 11.5183 130.47 12.825 131.31 14.435L126.9 17.515C126.527 16.6283 126.025 15.94 125.395 15.45C124.788 14.96 124.112 14.6217 123.365 14.435C122.642 14.225 121.942 14.12 121.265 14.12C120.168 14.12 119.212 14.3417 118.395 14.785C117.578 15.205 116.902 15.7767 116.365 16.5C115.828 17.2233 115.432 18.0283 115.175 18.915C114.918 19.8017 114.79 20.6883 114.79 21.575C114.79 22.555 114.942 23.5 115.245 24.41C115.548 25.32 115.98 26.125 116.54 26.825C117.123 27.525 117.823 28.085 118.64 28.505C119.457 28.9017 120.355 29.1 121.335 29.1C122.035 29.1 122.747 28.9833 123.47 28.75C124.193 28.5167 124.858 28.155 125.465 27.665C126.095 27.1517 126.573 26.4867 126.9 25.67L131.59 28.435C131.1 29.6483 130.295 30.6867 129.175 31.55C128.055 32.4133 126.783 33.0783 125.36 33.545C123.96 33.9883 122.572 34.21 121.195 34.21C119.398 34.21 117.742 33.8483 116.225 33.125C114.732 32.3783 113.437 31.3983 112.34 30.185C111.267 28.9483 110.427 27.5717 109.82 26.055C109.237 24.515 108.945 22.9517 108.945 21.365Z"
+                        fill="white" />
+                    <path
+                        d="M132.867 28.505C132.867 27.2917 133.205 26.23 133.882 25.32C134.558 24.41 135.492 23.6983 136.682 23.185C137.872 22.6483 139.237 22.38 140.777 22.38C141.523 22.38 142.258 22.45 142.982 22.59C143.705 22.7067 144.335 22.8817 144.872 23.115V22.31C144.872 21.3067 144.568 20.5367 143.962 20C143.355 19.4633 142.433 19.195 141.197 19.195C140.17 19.195 139.202 19.37 138.292 19.72C137.405 20.07 136.46 20.5717 135.457 21.225L133.777 17.655C134.99 16.8617 136.25 16.2667 137.557 15.87C138.887 15.4733 140.287 15.275 141.757 15.275C144.51 15.275 146.645 15.94 148.162 17.27C149.702 18.5767 150.472 20.4783 150.472 22.975V27.77C150.472 28.33 150.553 28.7267 150.717 28.96C150.903 29.17 151.218 29.2983 151.662 29.345V34C151.195 34.0933 150.752 34.1633 150.332 34.21C149.935 34.2567 149.585 34.28 149.282 34.28C148.232 34.28 147.427 34.07 146.867 33.65C146.33 33.23 145.992 32.6583 145.852 31.935L145.747 31.13C144.93 32.18 143.95 32.985 142.807 33.545C141.687 34.0817 140.508 34.35 139.272 34.35C138.058 34.35 136.962 34.0933 135.982 33.58C135.025 33.0667 134.267 32.3667 133.707 31.48C133.147 30.5933 132.867 29.6017 132.867 28.505ZM143.997 29.205C144.253 28.995 144.463 28.7617 144.627 28.505C144.79 28.2483 144.872 28.0033 144.872 27.77V26.125C144.405 25.9383 143.88 25.7983 143.297 25.705C142.737 25.5883 142.212 25.53 141.722 25.53C140.695 25.53 139.843 25.7633 139.167 26.23C138.49 26.6733 138.152 27.2683 138.152 28.015C138.152 28.435 138.268 28.82 138.502 29.17C138.735 29.52 139.05 29.8 139.447 30.01C139.867 30.22 140.357 30.325 140.917 30.325C141.477 30.325 142.037 30.22 142.597 30.01C143.157 29.8 143.623 29.5317 143.997 29.205Z"
+                        fill="white" />
+                    <path
+                        d="M166.184 20.42C164.831 20.42 163.606 20.6417 162.509 21.085C161.413 21.505 160.619 22.135 160.129 22.975V34H154.529V15.625H159.674V19.335C160.304 18.0983 161.121 17.13 162.124 16.43C163.128 15.73 164.178 15.3683 165.274 15.345C165.531 15.345 165.718 15.345 165.834 15.345C165.974 15.345 166.091 15.3567 166.184 15.38V20.42Z"
+                        fill="white" />
+                    <path
+                        d="M180.198 20.42C178.845 20.42 177.62 20.6417 176.523 21.085C175.426 21.505 174.633 22.135 174.143 22.975V34H168.543V15.625H173.688V19.335C174.318 18.0983 175.135 17.13 176.138 16.43C177.142 15.73 178.191 15.3683 179.288 15.345C179.545 15.345 179.731 15.345 179.848 15.345C179.988 15.345 180.105 15.3567 180.198 15.38V20.42Z"
+                        fill="white" />
+                    <path
+                        d="M191.17 34.35C189.607 34.35 188.207 34.0933 186.97 33.58C185.757 33.0667 184.73 32.3667 183.89 31.48C183.05 30.5933 182.408 29.5783 181.965 28.435C181.545 27.2917 181.335 26.09 181.335 24.83C181.335 23.5467 181.545 22.3333 181.965 21.19C182.408 20.0467 183.05 19.0317 183.89 18.145C184.73 17.2583 185.757 16.5583 186.97 16.045C188.207 15.5317 189.607 15.275 191.17 15.275C192.733 15.275 194.122 15.5317 195.335 16.045C196.548 16.5583 197.575 17.2583 198.415 18.145C199.255 19.0317 199.897 20.0467 200.34 21.19C200.783 22.3333 201.005 23.5467 201.005 24.83C201.005 26.09 200.783 27.2917 200.34 28.435C199.897 29.5783 199.255 30.5933 198.415 31.48C197.575 32.3667 196.548 33.0667 195.335 33.58C194.122 34.0933 192.733 34.35 191.17 34.35ZM187.075 24.83C187.075 25.7867 187.25 26.6267 187.6 27.35C187.973 28.0733 188.463 28.6333 189.07 29.03C189.677 29.4267 190.377 29.625 191.17 29.625C191.94 29.625 192.628 29.4267 193.235 29.03C193.865 28.61 194.355 28.0383 194.705 27.315C195.055 26.5917 195.23 25.7633 195.23 24.83C195.23 23.8733 195.055 23.0333 194.705 22.31C194.355 21.5867 193.865 21.0267 193.235 20.63C192.628 20.2333 191.94 20.035 191.17 20.035C190.377 20.035 189.677 20.2333 189.07 20.63C188.463 21.0267 187.973 21.5867 187.6 22.31C187.25 23.0333 187.075 23.8733 187.075 24.83Z"
+                        fill="white" />
+                </svg>
+            </a>
+            <p>Find your perfect ride from our diverse fleet!</p>
+            <div class="social-media">
+                <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-tiktok"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            </div>
+        </div>
+        <div class="our-links">
+            <h3>Helpful Links</h3>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#about">About</a>
+                <a href="#get-car">Get a car</a>
+                <a href="#offers">Offers</a>
+                <a href="#mobile-app">Mobile App</a>
+            </div>
+        </div>
+        <div class="our-links">
+            <h3>Customer Help</h3>
+            <div class="links">
+                <a href="#faqs">FAQs</a>
+                <a href="#">Feedbacks</a>
+                <a href="#">Terms &amp; Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+        <div class="our-links">
+            <h3>Get in touch</h3>
+            <div class="links">
+                <a href="#">Dealer locator</a>
+                <a href="#">Become a dealer</a>
+                <!-- <a href="#">Contact</a> -->
+                <div style="display: flex; flex-direction:row; align-items:center; gap: 5px; margin-top:5px">
+                    <ion-icon name="mail-outline" style="font-size: 20px;"></ion-icon>
+                    <a href="mailto:support@carro.com">support@carro.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="credits">
+        <div class="credits-text">
+            <p id="year-n-logo">
+                © 2024 <span><a href="index.html">
+                        <!-- <h1 class="logo active" data-logo>Car Rental</h1> -->
+                        <svg width="100" height="22" viewBox="0 0 201 43" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.1124 9.05263C10.1124 4.053 14.1368 0 19.1011 0H41.573C51.5017 0 59.5506 8.106 59.5506 18.1053H91.0112C95.9756 18.1053 100 22.1583 100 27.1579C100 32.1575 95.9756 36.2105 91.0112 36.2105H68.5393C58.6106 36.2105 50.5618 28.1045 50.5618 18.1053H19.1011C14.1368 18.1053 10.1124 14.0523 10.1124 9.05263Z"
+                                fill="white" />
+                            <path
+                                d="M20.2247 32.8158C20.2247 38.4404 15.6973 43 10.1124 43C4.52745 43 0 38.4404 0 32.8158C0 27.1912 4.52745 22.6316 10.1124 22.6316C15.6973 22.6316 20.2247 27.1912 20.2247 32.8158Z"
+                                fill="white" />
+                            <path
+                                d="M108.945 21.365C108.945 19.8483 109.225 18.3667 109.785 16.92C110.345 15.45 111.162 14.12 112.235 12.93C113.308 11.74 114.615 10.795 116.155 10.095C117.695 9.37167 119.445 9.01 121.405 9.01C123.738 9.01 125.757 9.51167 127.46 10.515C129.187 11.5183 130.47 12.825 131.31 14.435L126.9 17.515C126.527 16.6283 126.025 15.94 125.395 15.45C124.788 14.96 124.112 14.6217 123.365 14.435C122.642 14.225 121.942 14.12 121.265 14.12C120.168 14.12 119.212 14.3417 118.395 14.785C117.578 15.205 116.902 15.7767 116.365 16.5C115.828 17.2233 115.432 18.0283 115.175 18.915C114.918 19.8017 114.79 20.6883 114.79 21.575C114.79 22.555 114.942 23.5 115.245 24.41C115.548 25.32 115.98 26.125 116.54 26.825C117.123 27.525 117.823 28.085 118.64 28.505C119.457 28.9017 120.355 29.1 121.335 29.1C122.035 29.1 122.747 28.9833 123.47 28.75C124.193 28.5167 124.858 28.155 125.465 27.665C126.095 27.1517 126.573 26.4867 126.9 25.67L131.59 28.435C131.1 29.6483 130.295 30.6867 129.175 31.55C128.055 32.4133 126.783 33.0783 125.36 33.545C123.96 33.9883 122.572 34.21 121.195 34.21C119.398 34.21 117.742 33.8483 116.225 33.125C114.732 32.3783 113.437 31.3983 112.34 30.185C111.267 28.9483 110.427 27.5717 109.82 26.055C109.237 24.515 108.945 22.9517 108.945 21.365Z"
+                                fill="white" />
+                            <path
+                                d="M132.867 28.505C132.867 27.2917 133.205 26.23 133.882 25.32C134.558 24.41 135.492 23.6983 136.682 23.185C137.872 22.6483 139.237 22.38 140.777 22.38C141.523 22.38 142.258 22.45 142.982 22.59C143.705 22.7067 144.335 22.8817 144.872 23.115V22.31C144.872 21.3067 144.568 20.5367 143.962 20C143.355 19.4633 142.433 19.195 141.197 19.195C140.17 19.195 139.202 19.37 138.292 19.72C137.405 20.07 136.46 20.5717 135.457 21.225L133.777 17.655C134.99 16.8617 136.25 16.2667 137.557 15.87C138.887 15.4733 140.287 15.275 141.757 15.275C144.51 15.275 146.645 15.94 148.162 17.27C149.702 18.5767 150.472 20.4783 150.472 22.975V27.77C150.472 28.33 150.553 28.7267 150.717 28.96C150.903 29.17 151.218 29.2983 151.662 29.345V34C151.195 34.0933 150.752 34.1633 150.332 34.21C149.935 34.2567 149.585 34.28 149.282 34.28C148.232 34.28 147.427 34.07 146.867 33.65C146.33 33.23 145.992 32.6583 145.852 31.935L145.747 31.13C144.93 32.18 143.95 32.985 142.807 33.545C141.687 34.0817 140.508 34.35 139.272 34.35C138.058 34.35 136.962 34.0933 135.982 33.58C135.025 33.0667 134.267 32.3667 133.707 31.48C133.147 30.5933 132.867 29.6017 132.867 28.505ZM143.997 29.205C144.253 28.995 144.463 28.7617 144.627 28.505C144.79 28.2483 144.872 28.0033 144.872 27.77V26.125C144.405 25.9383 143.88 25.7983 143.297 25.705C142.737 25.5883 142.212 25.53 141.722 25.53C140.695 25.53 139.843 25.7633 139.167 26.23C138.49 26.6733 138.152 27.2683 138.152 28.015C138.152 28.435 138.268 28.82 138.502 29.17C138.735 29.52 139.05 29.8 139.447 30.01C139.867 30.22 140.357 30.325 140.917 30.325C141.477 30.325 142.037 30.22 142.597 30.01C143.157 29.8 143.623 29.5317 143.997 29.205Z"
+                                fill="white" />
+                            <path
+                                d="M166.184 20.42C164.831 20.42 163.606 20.6417 162.509 21.085C161.413 21.505 160.619 22.135 160.129 22.975V34H154.529V15.625H159.674V19.335C160.304 18.0983 161.121 17.13 162.124 16.43C163.128 15.73 164.178 15.3683 165.274 15.345C165.531 15.345 165.718 15.345 165.834 15.345C165.974 15.345 166.091 15.3567 166.184 15.38V20.42Z"
+                                fill="white" />
+                            <path
+                                d="M180.198 20.42C178.845 20.42 177.62 20.6417 176.523 21.085C175.426 21.505 174.633 22.135 174.143 22.975V34H168.543V15.625H173.688V19.335C174.318 18.0983 175.135 17.13 176.138 16.43C177.142 15.73 178.191 15.3683 179.288 15.345C179.545 15.345 179.731 15.345 179.848 15.345C179.988 15.345 180.105 15.3567 180.198 15.38V20.42Z"
+                                fill="white" />
+                            <path
+                                d="M191.17 34.35C189.607 34.35 188.207 34.0933 186.97 33.58C185.757 33.0667 184.73 32.3667 183.89 31.48C183.05 30.5933 182.408 29.5783 181.965 28.435C181.545 27.2917 181.335 26.09 181.335 24.83C181.335 23.5467 181.545 22.3333 181.965 21.19C182.408 20.0467 183.05 19.0317 183.89 18.145C184.73 17.2583 185.757 16.5583 186.97 16.045C188.207 15.5317 189.607 15.275 191.17 15.275C192.733 15.275 194.122 15.5317 195.335 16.045C196.548 16.5583 197.575 17.2583 198.415 18.145C199.255 19.0317 199.897 20.0467 200.34 21.19C200.783 22.3333 201.005 23.5467 201.005 24.83C201.005 26.09 200.783 27.2917 200.34 28.435C199.897 29.5783 199.255 30.5933 198.415 31.48C197.575 32.3667 196.548 33.0667 195.335 33.58C194.122 34.0933 192.733 34.35 191.17 34.35ZM187.075 24.83C187.075 25.7867 187.25 26.6267 187.6 27.35C187.973 28.0733 188.463 28.6333 189.07 29.03C189.677 29.4267 190.377 29.625 191.17 29.625C191.94 29.625 192.628 29.4267 193.235 29.03C193.865 28.61 194.355 28.0383 194.705 27.315C195.055 26.5917 195.23 25.7633 195.23 24.83C195.23 23.8733 195.055 23.0333 194.705 22.31C194.355 21.5867 193.865 21.0267 193.235 20.63C192.628 20.2333 191.94 20.035 191.17 20.035C190.377 20.035 189.677 20.2333 189.07 20.63C188.463 21.0267 187.973 21.5867 187.6 22.31C187.25 23.0333 187.075 23.8733 187.075 24.83Z"
+                                fill="white" />
+                        </svg>
+                    </a></span>
+            </p>
+            <p id="rights">
+                All Rights Reserved
+            </p>
+        </div>
+    </section>
+
+    <div class="sidebar">
+
+        <div class="close-sign" onclick="toggleSidebar()">
+            <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <path stroke="#164864" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
+                    d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+            </svg>
+        </div>
+
+        <br>
+        <div class="box">
+
+            <div class="container"></div>
+
+            <img src="calendar.png" width="48px">
+            <div>
+                <h3 class="headerText3">Fee cancellation</h3>
+                <p>Lock in this price today, cancel free of charge anytime. Reserve now and pay at pick-up.</p>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div>
+                <h2 class="headerText2">Car rental location</h2>
+                <h3 class="headerText3">Pick-up & Drop-off</h3>
+
+                <div class="line_box">
+                    <svg class="w-[24px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        viewBox="0 0 24 24">
+                        <path fill-rule="evenodd"
+                            d="M5 5a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1h1a1 1 0 0 0 1-1 1 1 0 1 1 2 0 1 1 0 0 0 1 1 2 2 0 0 1 2 2v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a2 2 0 0 1 2-2ZM3 19v-7a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Zm6.01-6a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm-10 4a1 1 0 1 1 2 0 1 1 0 0 1-2 0Zm6 0a1 1 0 1 0-2 0 1 1 0 0 0 2 0Zm2 0a1 1 0 1 1 2 0 1 1 0 0 1-2 0Z"
+                            clip-rule="evenodd" />
+
+
+                    </svg>
+                    <p>Mon 6:00am - 11:00pm Tue 6:00am - 11:00pm</p>
+                </div>
+                <div class="line_box">
+                    <svg class="w-[24px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.8 13.938h-.011a7 7 0 1 0-11.464.144h-.016l.14.171c.1.127.2.251.3.371L12 21l5.13-6.248c.194-.209.374-.429.54-.659l.13-.155Z" />
+                    </svg>
+                    <div>
+                        <h3 class="headerText3">location</h3>
+                        <p id="location-reserve"></p>
+                    </div>
+                </div>
+                <div class="line_box">
+                    <svg class="w-[24px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 8v4l3 3m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    <div>
+                        <h3 class="headerText3">Hours of operation</h3>
+                        <div>
+                            <p>Mon, May 13, 10:30am - Tue, May 14, 10:30am</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="line_box">
+                    <svg class="w-[24px] h-[24px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7h6l2 4m-8-4v8m0-8V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v9h2m8 0H9m4 0h2m4 0h2v-4m0 0h-5m3.5 5.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm-10 0a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Z" />
+                    </svg>
+
+                    <div>
+
+                        <div>
+                            <p>Rental car counter and car in the airport.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="yellow-box">
+            <div>
+
+                <h2 class="headerText2">Get a rental car insurance plan</h2>
+                <div class="insurance_box">
+                    <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 11.917 9.724 16.5 19 7.5" />
+                    </svg>
+                    <p>Covers certain bumps, scratches, and other damage</p>
+                </div>
+                <div class="insurance_box">
+                    <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 11.917 9.724 16.5 19 7.5" />
+                    </svg>
+                    <p> Helps protect your rental vehicle in case of an accidlent or collision</p>
+                </div>
+                <div class="insurance_box">
+                    <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 11.917 9.724 16.5 19 7.5" />
+                    </svg>
+                    <p>Gives you access to 24/7 emergency travel assistance</p>
+                </div>
+
+                <hr>
+                <div class="insurance_box">
+                    <div class="insurance_box">
+                        <p><b>Add the insurance plan to your rental car on the next step.</b></p>
+                    </div>
+                </div>
+            </div>
+
+
+            <img class="insurance_img" src="insurance.png" alt="">
+
+        </div>
+
+        <div class="box">
+            <div>
+                <h2 class="headerText2">Rental policies</h2>
+                <ul class="policiesList">
+                    <li>
+                        <p> You will receive an email/a message from Budget to check-in online</p>
+                    </li>
+
+                    <li>
+                        <p> Drivers under 25 or over 70 years of age may need to pay an extra fee.</p>
+                    </li>
+                </ul>
+
+
+                <div class="line_box">
+                    <a class="policiesListA" href="">View rules and restrictions </a>
+
+                </div>
+
+                <div class="line_box">
+                    <!-- <div>
+                        <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 11.917 9.724 16.5 19 7.5" />
+                        </svg>
+                    </div> -->
+                    <div>
+                        <h3 class="headerText3" style="display: flex; flex-direction:row; align-items:center;">
+                            <svg class="w-[18px] h-[18px] text-gray-800 dark:text-white" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                viewBox="0 0 24 24">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M5 11.917 9.724 16.5 19 7.5" />
+                            </svg>Minimal contact with option to check-in online
+                        </h3>
+
+                        <ul class="policiesList">
+                            <li>
+                                <p> You will receive an email/a message from Budget to check-in online </p>
+                            </li>
+
+                            <li>
+                                <p> No paper-work required during pick-up</p>
+                            </li>
+
+                            <li>
+                                <p>Minimize contact and save time at the pick-up counter</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box">
+            <div class="inner-box">
+                <h2 class="headerText2">Extras</h2>
+                <p>Requests cannot be guaranteed as they are subject to availability. Payment due at pick-up.</p>
+                <br>
+                <div class="extra-box">
+                    <div>
+                        <input class="extraCheckBox" id="BabyChildSeat" type="checkbox">
+                        <label for="BabyChildSeat">Baby Child Seat</label>
+                    </div>
+                    <div class="price-for-extra">
+                        <h4>$38</h4>
+                        <p>per day</p>
+                    </div>
+                </div>
+
+                <div class="extra-box">
+                    <div>
+                        <input class="extraCheckBox" id="BoosterSeat" type="checkbox">
+                        <label for="BoosterSeat">Booster Seat</label>
+                    </div>
+                    <div class="price-for-extra">
+                        <h4>$38</h4>
+                        <p>per day</p>
+                    </div>
+                </div>
+
+                <div class="extra-box">
+                    <div>
+                        <input class="extraCheckBox" id="RoadsideAssistance" type="checkbox">
+                        <label for="RoadsideAssistance">Roadside Assistance</label>
+                    </div>
+                    <div class="price-for-extra">
+                        <h4>$32</h4>
+                        <p>per day</p>
+                    </div>
+                </div>
+
+                <div class="extra-box">
+                    <div>
+                        <input class="extraCheckBox" id="HandheldNavigationSystem" type="checkbox">
+                        <label for="HandheldNavigationSystem">Handheld Navigation System</label>
+                    </div>
+                    <div class="price-for-extra">
+                        <h4>$36</h4>
+                        <p>per day</p>
+                    </div>
+                </div>
+
+                <div class="extra-box">
+                    <div>
+                        <input class="extraCheckBox" id="WinterTyre" type="checkbox">
+                        <label for="WinterTyre">Winter Tyre</label>
+                    </div>
+                    <div class="price-for-extra">
+                        <h4>$40</h4>
+                        <p>per day</p>
+                    </div>
+                </div>
+
+                <div class="extra-box">
+                    <div>
+                        <input class="extraCheckBox" id="SkiRack" type="checkbox">
+                        <label for="SkiRack">Ski Rack</label>
+                    </div>
+                    <div class="price-for-extra">
+                        <h4>$98</h4>
+                        <p>per day</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="inner-box">
+
+
+                <h2 id="car-type-reserve" class="headerText2" style="font-size: larger;"></h2>
+                <p id="car-make-reserve"></p>
+
+                <div class="display-box">
+                    <div class="car-details-box">
+                        <div class="inner-box">
+                            <div class="line_box">
+                                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none"
+                                    viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-width="1.5"
+                                        d="M16 19h4a1 1 0 0 0 1-1v-1a3 3 0 0 0-3-3h-2m-2.236-4a3 3 0 1 0 0-4M3 18v-1a3 3 0 0 1 3-3h4a3 3 0 0 1 3 3v1a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1Zm8-10a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+
+                                <span id="Passenger-reseve"></span><span>Passenger</span>
+                            </div>
+                            <div class="line_box">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000"
+                                    class="bi bi-snow" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 16a.5.5 0 0 1-.5-.5v-1.293l-.646.647a.5.5 0 0 1-.707-.708L7.5 12.793V8.866l-3.4 1.963-.496 1.85a.5.5 0 1 1-.966-.26l.237-.882-1.12.646a.5.5 0 0 1-.5-.866l1.12-.646-.884-.237a.5.5 0 1 1 .26-.966l1.848.495L7 8 3.6 6.037l-1.85.495a.5.5 0 0 1-.258-.966l.883-.237-1.12-.646a.5.5 0 1 1 .5-.866l1.12.646-.237-.883a.5.5 0 1 1 .966-.258l.495 1.849L7.5 7.134V3.207L6.147 1.854a.5.5 0 1 1 .707-.708l.646.647V.5a.5.5 0 1 1 1 0v1.293l.647-.647a.5.5 0 1 1 .707.708L8.5 3.207v3.927l3.4-1.963.496-1.85a.5.5 0 1 1 .966.26l-.236.882 1.12-.646a.5.5 0 0 1 .5.866l-1.12.646.883.237a.5.5 0 1 1-.26.966l-1.848-.495L9 8l3.4 1.963 1.849-.495a.5.5 0 0 1 .259.966l-.883.237 1.12.646a.5.5 0 0 1-.5.866l-1.12-.646.236.883a.5.5 0 1 1-.966.258l-.495-1.849-3.4-1.963v3.927l1.353 1.353a.5.5 0 0 1-.707.708l-.647-.647V15.5a.5.5 0 0 1-.5.5z" />
+                                </svg>
+
+                                <p id="air-conditioning-reserve"></p>
+                            </div>
+                            <div class="line_box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                                    class="bi bi-speedometer2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4M3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707M2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10m9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5m.754-4.246a.39.39 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.39.39 0 0 0-.029-.518z" />
+                                    <path fill-rule="evenodd"
+                                        d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A8 8 0 0 1 0 10m8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3" />
+                                </svg>
+
+                                <p>Unlimited mileage </p>
+                            </div>
+                        </div>
+                        <div class="inner-box">
+                            <div class="line_box">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#000"
+                                    class="bi bi-suitcase" viewBox="0 0 16 16">
+                                    <path stroke-width="1.5"
+                                        d="M6 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 6 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 10 5" />
+                                    <path stroke-width="1.5"
+                                        d="M6.5 0a.5.5 0 0 0-.5.5V3H5a2 2 0 0 0-2 2v8a2 2 0 0 0 1.031 1.75A1.003 1.003 0 0 0 5 16a1 1 0 0 0 1-1h4a1 1 0 1 0 1.969-.25A2 2 0 0 0 13 13V5a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-.5-.5zM9 3H7V1h2zm3 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
+                                </svg>
+                                <span id="car-door-number"></span> <span>Baggages</span>
+                            </div>
+                            <div class="line_box">
+
+                                <svg width="20" height="24" viewBox="0 0 17 15" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.5 4V10.6848" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5" />
+                                    <path d="M8.5 4V10.6848" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5" />
+                                    <path d="M14.5 4V7.09998" stroke="#000" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5" />
+                                    <path d="M3 7.5H14.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" />
+                                    <path stroke-width="1.5"
+                                        d="M4 2C4 2.82843 3.32843 3.5 2.5 3.5C1.67157 3.5 1 2.82843 1 2C1 1.17157 1.67157 0.5 2.5 0.5C3.32843 0.5 4 1.17157 4 2Z"
+                                        stroke="#000" />
+                                    <path stroke-width="1.5"
+                                        d="M10 2C10 2.82843 9.32843 3.5 8.5 3.5C7.67157 3.5 7 2.82843 7 2C7 1.17157 7.67157 0.5 8.5 0.5C9.32843 0.5 10 1.17157 10 2Z"
+                                        stroke="#000" />
+                                    <path stroke-width="1.5"
+                                        d="M16 2C16 2.82843 15.3284 3.5 14.5 3.5C13.6716 3.5 13 2.82843 13 2C13 1.17157 13.6716 0.5 14.5 0.5C15.3284 0.5 16 1.17157 16 2Z"
+                                        stroke="#000" />
+                                    <path stroke-width="1.5"
+                                        d="M4 13C4 13.8284 3.32843 14.5 2.5 14.5C1.67157 14.5 1 13.8284 1 13C1 12.1716 1.67157 11.5 2.5 11.5C3.32843 11.5 4 12.1716 4 13Z"
+                                        stroke="#000" />
+                                    <path stroke-width="1.5"
+                                        d="M10 13C10 13.8284 9.32843 14.5 8.5 14.5C7.67157 14.5 7 13.8284 7 13C7 12.1716 7.67157 11.5 8.5 11.5C9.32843 11.5 10 12.1716 10 13Z"
+                                        stroke="#000" />
+                                </svg>
+
+
+                                <p id="transmission-type-reserve"></p>
+                            </div>
+                            <div class="line_box">
+
+                                <svg class="fuel" width="24" height="24" viewBox="0 0 16 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.5 17.5H1" stroke="#000" stroke-linecap="round" stroke-width="1.5" />
+                                    <path stroke-width="1.5"
+                                        d="M5.37726 3.5H10.623C11.7793 3.5 12.5 4.21744 12.5 4.86584V17.5H3.5V4.86584C3.5 4.2175 4.2209 3.5 5.37726 3.5Z"
+                                        stroke="#000" stroke-linecap="round" />
+                                    <path stroke-width="1.5" fill-rule="evenodd" clip-rule="evenodd" d="M10 7.5H6H10Z"
+                                        stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path stroke-width="1.5" d="M12.5 14C12.5 14 15.5 14 15.5 10.5C15.5 7 15.5 6 15.5 6"
+                                        stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                                <p id="Fuel_type_reserve">Full to Full</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="inner-box" id="car-img-div">
+                        <div id="reserce-img"> </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2 class="headerText2">Price details</h2>
+                <p class="paragraph-design">Pay at pick-up</p>
+                <br>
+
+                <div>
+
+                    <div class="inner-box">
+
+                        <div class="extra-box">
+                            <p class="paragraph-design2">Car rental fee x 1 day</p>
+
+
+
+                            <div>
+                                <span class="paragraph-design2">$</span>
+                                <p id="car_price" class="paragraph-design2"></p>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                        <div class="extra-box extras" id="BabyChildSeatBox">
+                            <p class="paragraph-design2">baby child Seat</p>
+
+                            <p class="paragraph-design2">$38.00</p>
+                        </div>
+                        <div class="extra-box extras" id="BoosterSeatBox">
+                            <p class="paragraph-design2">Booster Seat</p>
+
+                            <p class="paragraph-design2">$38.00</p>
+                        </div>
+                        <div class="extra-box extras" id="RoadsideAssistanceBox">
+                            <p class="paragraph-design2">Roadside Assistance</p>
+
+                            <p class="paragraph-design2">$32.00</p>
+                        </div>
+                        <div class="extra-box extras" id="HandheldNavigationSystemBox">
+                            <p class="paragraph-design2">Handheld Navigation System</p>
+
+                            <p class="paragraph-design2">$36.00</p>
+                        </div>
+                        <div class="extra-box extras" id="WinterTyreBox">
+                            <p class="paragraph-design2">Winter Tyre</p>
+
+                            <p class="paragraph-design2">$40.00</p>
+                        </div>
+                        <div class="extra-box extras" id="SkiRackBox">
+                            <p class="paragraph-design2">Ski Rack</p>
+
+                            <p class="paragraph-design2">$98.00</p>
+                        </div>
+
+
+
+                        <br>
+                        <div class="extra-box">
+                            <p class="paragraph-design2">Taxes and fees</p>
+
+                            <p class="paragraph-design2">included</p>
+                        </div>
+
+
+
+                        <div class="extra-box">
+                            <h3 class="headerText3" id="totalPriceText">Total</h3>
+                            <div>
+                                <span class="headerText3" id="totalPriceText">$</span>
+                                <h3 class="headerText3" id="totalPrice"></h3>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <button class="book-btn book-btn-disabled" id="reservation-btn">Reserve</button>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="popper.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="rome.js"></script>
+    <script src="main.js"></script>
+    <script src="nav.js"></script>
+    <script src="filter.js"></script>
+    <script src="sort.js"></script>
+    <script src="index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
